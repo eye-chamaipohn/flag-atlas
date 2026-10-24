@@ -267,6 +267,7 @@ kbd { font-family: var(--f-mono); font-size: 11px; padding: 2px 6px; border-radi
       </div>
       <p class="en-name" id="lEn" hidden>English: <b id="lEnName"></b></p>
       <p class="capital"><span><span data-i18n="capital">Capital</span>:</span> <b id="lCap"></b><button class="say sm" id="sayCap" type="button" data-say="capital"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></button></p>
+      <p class="capital"><span><span data-i18n="region">Region</span>:</span> <b id="lRegion"></b></p>
       <div class="section">
         <h3 data-i18n="landmarks">Landmarks</h3>
         <ul class="landmarks" id="lLand"></ul>
@@ -504,6 +505,7 @@ function showCountry(c, still) {
   $("sayName").title = $("sayName").ariaLabel = t("say")(c.name);
   $("sayCap").title = $("sayCap").ariaLabel = t("say")(c.capital);
   $("lCap").textContent = l.capital;
+  $("lRegion").textContent = l.sub === l.cont ? l.cont : `${l.sub}, ${l.cont}`;
   renderLandmarks(c, l);
   showOnMap(c, l.name);
   $("lFacts").innerHTML = ""; l.facts.forEach(t => { const li = document.createElement("li"); li.textContent = t; $("lFacts").appendChild(li); });
