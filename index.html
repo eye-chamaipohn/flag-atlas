@@ -106,7 +106,11 @@ header { display: flex; flex-wrap: wrap; align-items: center; justify-content: s
 #map .pin { fill: var(--signal); stroke: var(--ink); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
 #map .pulse { fill: none; stroke: var(--signal); stroke-width: 2; vector-effect: non-scaling-stroke; transform-box: fill-box; transform-origin: center; animation: pulse 1.8s ease-out infinite; }
 @keyframes pulse { from { transform: scale(.6); opacity: 1; } to { transform: scale(2.6); opacity: 0; } }
+.mapfoot { display: flex; align-items: center; justify-content: space-between; gap: 8px 12px; flex-wrap: wrap; }
 .mapnote { margin: 0; font-size: 11px; color: var(--muted); }
+.gmap { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--accent); text-decoration: none; padding: 6px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+.gmap:hover { border-color: var(--accent); }
+.gmap svg { width: 15px; height: 15px; flex: none; }
 @media (prefers-reduced-motion: reduce) { #map .pulse { animation: none; opacity: .6; } }
 .learn { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 24px; align-items: start; }
 .label-card { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 24px; display: flex; flex-direction: column; gap: 18px; min-width: 0; }
@@ -253,7 +257,10 @@ kbd { font-family: var(--f-mono); font-size: 11px; padding: 2px 6px; border-radi
           </div>
         </div>
         <div class="mapbox"><svg id="map" role="img" aria-labelledby="mapTitle"><title id="mapTitle"></title></svg></div>
-        <figcaption class="mapnote" data-i18n="mapCredit">Map: Natural Earth (public domain)</figcaption>
+        <div class="mapfoot">
+          <figcaption class="mapnote" data-i18n="mapCredit">Map: Natural Earth (public domain)</figcaption>
+          <a class="gmap" id="gmapLink" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-i18n="gmap">Open in Google Maps</span></a>
+        </div>
       </figure>
     </div>
     <article class="label-card">
@@ -333,7 +340,7 @@ const I18N = {
     hint: 'Pick an answer with <kbd>1</kbd> / <kbd>2</kbd>, or press <kbd>A</kbd> to see the answer.',
     correct: "Correct!", answer: "Answer:", wrong: "Not quite.",
     thisIs: (n, c) => `This is <strong>${n}</strong>, capital <strong>${c}</strong>.`,
-    learn: "Learn about it", where: "Where in the world", vCountry: "Country", vRegion: "Region", vWorld: "World", mapOf: n => `World map with ${n} highlighted`, mapCredit: "Map: Natural Earth (public domain)", credit: 'Photos from <a href="https://www.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> and Wikimedia Commons. Tap a photo for its source and license.', photoOf: n => `Photo of ${n}`, say: n => `Hear "${n}" in English`, kSay: "Hear the name", pressNext: 'Press <kbd>Space</kbd> for the next flag',
+    learn: "Learn about it", where: "Where in the world", vCountry: "Country", gmap: "Open in Google Maps", gmapOf: n => `Open ${n} in Google Maps (new tab)`, vRegion: "Region", vWorld: "World", mapOf: n => `World map with ${n} highlighted`, mapCredit: "Map: Natural Earth (public domain)", credit: 'Photos from <a href="https://www.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> and Wikimedia Commons. Tap a photo for its source and license.', photoOf: n => `Photo of ${n}`, say: n => `Hear "${n}" in English`, kSay: "Hear the name", pressNext: 'Press <kbd>Space</kbd> for the next flag',
     cont: { "All": "All", "Africa": "Africa", "Asia": "Asia", "Europe": "Europe", "North America": "North America", "South America": "South America", "Oceania": "Oceania" },
     sub: {}
   },
@@ -346,7 +353,7 @@ const I18N = {
     hint: 'เลือกคำตอบด้วย <kbd>1</kbd> / <kbd>2</kbd> หรือกด <kbd>A</kbd> เพื่อดูคำตอบ',
     correct: "ถูกต้อง!", answer: "คำตอบ:", wrong: "ยังไม่ถูก",
     thisIs: (n, c) => `นี่คือธงชาติ<strong>${n}</strong> เมืองหลวงคือ<strong>${c}</strong>`,
-    learn: "ดูข้อมูลประเทศนี้", where: "ตำแหน่งบนแผนที่โลก", vCountry: "ประเทศ", vRegion: "ภูมิภาค", vWorld: "ทั้งโลก", mapOf: n => `แผนที่โลกแสดงตำแหน่งของ${n}`, mapCredit: "แผนที่: Natural Earth (สาธารณสมบัติ)", credit: 'ภาพจาก <a href="https://www.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> และ Wikimedia Commons แตะที่ภาพเพื่อดูแหล่งที่มาและสัญญาอนุญาต', photoOf: n => `ภาพ${n}`, say: n => `ฟังการออกเสียง "${n}" ภาษาอังกฤษ`, kSay: "ฟังการออกเสียงชื่อ", pressNext: 'กด <kbd>Space</kbd> เพื่อไปธงถัดไป',
+    learn: "ดูข้อมูลประเทศนี้", where: "ตำแหน่งบนแผนที่โลก", vCountry: "ประเทศ", gmap: "เปิดใน Google Maps", gmapOf: n => `เปิด${n}ใน Google Maps (แท็บใหม่)`, vRegion: "ภูมิภาค", vWorld: "ทั้งโลก", mapOf: n => `แผนที่โลกแสดงตำแหน่งของ${n}`, mapCredit: "แผนที่: Natural Earth (สาธารณสมบัติ)", credit: 'ภาพจาก <a href="https://www.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> และ Wikimedia Commons แตะที่ภาพเพื่อดูแหล่งที่มาและสัญญาอนุญาต', photoOf: n => `ภาพ${n}`, say: n => `ฟังการออกเสียง "${n}" ภาษาอังกฤษ`, kSay: "ฟังการออกเสียงชื่อ", pressNext: 'กด <kbd>Space</kbd> เพื่อไปธงถัดไป',
     cont: { "All": "ทั้งหมด", "Africa": "แอฟริกา", "Asia": "เอเชีย", "Europe": "ยุโรป", "North America": "อเมริกาเหนือ", "South America": "อเมริกาใต้", "Oceania": "โอเชียเนีย" },
     sub: {
       "North Africa": "แอฟริกาเหนือ", "West Africa": "แอฟริกาตะวันตก", "East Africa": "แอฟริกาตะวันออก", "Central Africa": "แอฟริกากลาง", "Southern Africa": "แอฟริกาตอนใต้",
@@ -477,6 +484,10 @@ function drawPin() {
 function showOnMap(c, name) {
   if (mapCode && shapes[mapCode]) shapes[mapCode].classList.remove("on");
   mapCode = c.code; mapCountry = c;
+  // Names Google could confuse with somewhere else get a clearer search term.
+  const GQ = { ge: "Georgia (country)", cg: "Republic of the Congo", cd: "Democratic Republic of the Congo", ps: "State of Palestine", fm: "Federated States of Micronesia" };
+  $("gmapLink").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(GQ[c.code] || c.name);
+  $("gmapLink").title = $("gmapLink").ariaLabel = t("gmapOf")(name);
   const s = shapes[c.code];
   if (s) { s.classList.add("on"); landG.appendChild(s); }
   $("mapTitle").textContent = t("mapOf")(name);
