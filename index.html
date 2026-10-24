@@ -96,6 +96,17 @@ header { display: flex; flex-wrap: wrap; align-items: center; justify-content: s
 .country { font-family: var(--f-display); font-weight: 800; font-size: clamp(30px, 5vw, 46px); line-height: 1.02; letter-spacing: -.025em; margin: 0; text-wrap: balance; }
 .capital { margin: -8px 0 0; color: var(--muted); }
 .capital b { color: var(--ink); font-weight: 600; }
+.capital { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.name-row { display: flex; align-items: center; gap: 12px; }
+.name-row .country { min-width: 0; }
+.say { flex: none; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--mount); color: var(--accent); display: inline-grid; place-items: center; padding: 0; transition: background .15s, color .15s; }
+.say svg { width: 20px; height: 20px; }
+.say:hover { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.say.talking { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.say.sm { width: 28px; height: 28px; }
+.say.sm svg { width: 15px; height: 15px; }
+.en-name { margin: -12px 0 0; font-size: 15px; color: var(--muted); }
+.en-name b { color: var(--ink); font-weight: 600; }
 .section h3 { margin: 0 0 8px; font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
 .landmarks { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .landmarks li { padding: 6px 12px; border-radius: 4px; background: var(--mount); border: 1px solid var(--line); font-size: 14px; }
@@ -202,8 +213,12 @@ kbd { font-family: var(--f-mono); font-size: 11px; padding: 2px 6px; border-radi
         <span class="pill cont" id="lCont"></span>
         <span class="pill" id="lSub"></span>
       </div>
-      <h2 class="country" id="lName"></h2>
-      <p class="capital"><span data-i18n="capital">Capital</span>: <b id="lCap"></b></p>
+      <div class="name-row">
+        <h2 class="country" id="lName"></h2>
+        <button class="say" id="sayName" type="button" data-say="name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></button>
+      </div>
+      <p class="en-name" id="lEn" hidden>English: <b id="lEnName"></b></p>
+      <p class="capital"><span data-i18n="capital">Capital</span>: <b id="lCap"></b><button class="say sm" id="sayCap" type="button" data-say="capital"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></button></p>
       <div class="section">
         <h3 data-i18n="landmarks">Landmarks</h3>
         <ul class="landmarks" id="lLand"></ul>
@@ -245,6 +260,7 @@ kbd { font-family: var(--f-mono); font-size: 11px; padding: 2px 6px; border-radi
         <h3 data-i18n="keyboard">Keyboard</h3>
         <div><span data-i18n="kPick">Pick left / right</span><kbd>1 · 2</kbd></div>
         <div><span data-i18n="kShow">Show correct answer</span><kbd>A</kbd></div>
+        <div><span data-i18n="kSay">Hear the name</span><kbd>P</kbd></div>
         <div><span data-i18n="next">Next flag</span><kbd>Space</kbd></div>
         <button class="btn" id="resetBtn" type="button" data-i18n="reset">Reset score</button>
       </div>
@@ -266,7 +282,7 @@ const I18N = {
     hint: 'Pick an answer with <kbd>1</kbd> / <kbd>2</kbd>, or press <kbd>A</kbd> to see the answer.',
     correct: "Correct!", answer: "Answer:", wrong: "Not quite.",
     thisIs: (n, c) => `This is <strong>${n}</strong>, capital <strong>${c}</strong>.`,
-    learn: "Learn about it", pressNext: 'Press <kbd>Space</kbd> for the next flag',
+    learn: "Learn about it", say: n => `Hear "${n}" in English`, kSay: "Hear the name", pressNext: 'Press <kbd>Space</kbd> for the next flag',
     cont: { "All": "All", "Africa": "Africa", "Asia": "Asia", "Europe": "Europe", "North America": "North America", "South America": "South America", "Oceania": "Oceania" },
     sub: {}
   },
@@ -279,7 +295,7 @@ const I18N = {
     hint: 'เลือกคำตอบด้วย <kbd>1</kbd> / <kbd>2</kbd> หรือกด <kbd>A</kbd> เพื่อดูคำตอบ',
     correct: "ถูกต้อง!", answer: "คำตอบ:", wrong: "ยังไม่ถูก",
     thisIs: (n, c) => `นี่คือธงชาติ<strong>${n}</strong> เมืองหลวงคือ<strong>${c}</strong>`,
-    learn: "ดูข้อมูลประเทศนี้", pressNext: 'กด <kbd>Space</kbd> เพื่อไปธงถัดไป',
+    learn: "ดูข้อมูลประเทศนี้", say: n => `ฟังการออกเสียง "${n}" ภาษาอังกฤษ`, kSay: "ฟังการออกเสียงชื่อ", pressNext: 'กด <kbd>Space</kbd> เพื่อไปธงถัดไป',
     cont: { "All": "ทั้งหมด", "Africa": "แอฟริกา", "Asia": "เอเชีย", "Europe": "ยุโรป", "North America": "อเมริกาเหนือ", "South America": "อเมริกาใต้", "Oceania": "โอเชียเนีย" },
     sub: {
       "North Africa": "แอฟริกาเหนือ", "West Africa": "แอฟริกาตะวันตก", "East Africa": "แอฟริกาตะวันออก", "Central Africa": "แอฟริกากลาง", "Southern Africa": "แอฟริกาตอนใต้",
@@ -367,6 +383,10 @@ function showCountry(c, still) {
   $("lCont").textContent = l.cont;
   $("lSub").textContent = l.sub;
   $("lName").textContent = l.name;
+  $("lEn").hidden = lang === "en";
+  $("lEnName").textContent = c.name;
+  $("sayName").title = $("sayName").ariaLabel = t("say")(c.name);
+  $("sayCap").title = $("sayCap").ariaLabel = t("say")(c.capital);
   $("lCap").textContent = l.capital;
   $("lLand").innerHTML = ""; l.landmarks.forEach(t => { const li = document.createElement("li"); li.textContent = t; $("lLand").appendChild(li); });
   $("lFacts").innerHTML = ""; l.facts.forEach(t => { const li = document.createElement("li"); li.textContent = t; $("lFacts").appendChild(li); });
@@ -418,8 +438,10 @@ function paintQuiz() {
   const a = L(q.answer);
   fb.className = "feedback " + (q.ok ? "good" : "bad");
   const tag = q.ok ? t("correct") : q.revealed ? t("answer") : t("wrong");
-  fb.innerHTML = `<span class="tag">${esc(tag)}</span><span>${t("thisIs")(esc(a.name), esc(a.capital))}</span> <button class="link" type="button">${esc(t("learn"))}</button> <span style="margin-left:auto">${t("pressNext")}</span>`;
+  fb.innerHTML = `<span class="tag">${esc(tag)}</span><span>${t("thisIs")(esc(a.name), esc(a.capital))}</span> <button class="say sm" type="button" title="${esc(t("say")(q.answer.name))}" aria-label="${esc(t("say")(q.answer.name))}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></button> <button class="link" type="button">${esc(t("learn"))}</button> <span style="margin-left:auto">${t("pressNext")}</span>`;
   const answer = q.answer;
+  if (!canSpeak) fb.querySelector(".say").hidden = true;
+  fb.querySelector(".say").addEventListener("click", e => speak(answer.name, e.currentTarget));
   fb.querySelector(".link").addEventListener("click", () => openInLearn(answer));
 }
 function finish(pickIndex) {
@@ -470,6 +492,31 @@ function setMode(m) {
 $("tabLearn").addEventListener("click", () => setMode("learn"));
 $("tabQuiz").addEventListener("click", () => setMode("quiz"));
 
+/* English pronunciation (browser speech synthesis) */
+const canSpeak = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+let enVoice = null;
+function pickVoice() {
+  if (!canSpeak) return;
+  const vs = speechSynthesis.getVoices().filter(v => /^en(-|_|$)/i.test(v.lang));
+  enVoice = vs.find(v => /en-US/i.test(v.lang) && v.localService) || vs.find(v => /en-US/i.test(v.lang)) || vs.find(v => /en-GB/i.test(v.lang)) || vs[0] || null;
+}
+if (canSpeak) { pickVoice(); speechSynthesis.addEventListener?.("voiceschanged", pickVoice); }
+function speak(text, btn) {
+  if (!canSpeak || !text) return;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = enVoice ? enVoice.lang : "en-US";
+  if (enVoice) u.voice = enVoice;
+  u.rate = 0.9;
+  document.querySelectorAll(".say.talking").forEach(b => b.classList.remove("talking"));
+  if (btn) { btn.classList.add("talking"); u.onend = u.onerror = () => btn.classList.remove("talking"); }
+  speechSynthesis.speak(u);
+}
+function currentLearn() { return hIndex >= 0 ? history[hIndex] : null; }
+$("sayName").addEventListener("click", e => { const c = currentLearn(); if (c) speak(c.name, e.currentTarget); });
+$("sayCap").addEventListener("click", e => { const c = currentLearn(); if (c) speak(c.capital.replace(/\s*\(.*?\)/g, ""), e.currentTarget); });
+if (!canSpeak) document.querySelectorAll(".say").forEach(b => { b.hidden = true; });
+
 /* Keyboard */
 document.addEventListener("keydown", e => {
   if (e.ctrlKey || e.metaKey || e.altKey) return;
@@ -477,6 +524,11 @@ document.addEventListener("keydown", e => {
   if (k === " " || k === "Spacebar") {
     e.preventDefault();
     if (mode === "learn") learnNext(); else quizNext();
+    return;
+  }
+  if (k === "p" || k === "P") {
+    if (mode === "learn") { const c = currentLearn(); if (c) speak(c.name, $("sayName")); }
+    else if (q && q.done) speak(q.answer.name, $("feedback").querySelector(".say"));
     return;
   }
   if (mode === "learn") {
