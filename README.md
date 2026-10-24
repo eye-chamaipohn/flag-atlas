@@ -8,6 +8,10 @@ A web app that shows random flags from 197 countries, in English and Thai.
 - **Landmark photos**: loaded live from Wikipedia / Wikimedia Commons (free-licensed lead images). Tap a photo for its source and license. Without internet access the landmarks show as labels.
 - **Challenge**: pick a game.
   - **Quick Pick** (1 player): guess the country from two choices. Keys: `1` / `2` to pick, `A` to show the answer, `Space` for the next flag.
+  - **Survival** (1 player): flags with four choices, 3 lives and a timer that gets shorter as you go.
+  - **Capital Quiz** (1 player): pick the capital from four choices.
+  - **Landmark Quiz** (1 player): name the country a landmark is in (with a Wikipedia photo when online).
+  - **Map Quiz** (1 player): click the named country on its region map. A miss shows what you clicked and how far away it was.
   - **Flag Duel** (2 players): a chess-clock duel. Each player has 30–90 seconds (45 by default). Say the country out loud, then press your key (`A` for player 1, `L` for player 2) or tap your clock to pass the clock to your rival. `Space` passes (the answer shows for 2 seconds while your clock keeps running), `Esc` pauses. Whoever runs out of time first loses.
 
 The whole app is one file, `index.html`. Open it in a browser, or visit the GitHub Pages site.
