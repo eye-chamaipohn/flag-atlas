@@ -1,0 +1,15 @@
+/* Four-choice games (Capital Quiz, Landmark Quiz, Survival) */
+.choices.four .choice { min-height: 64px; font-size: 16px; }
+.tbar { height: 8px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.tbar i { display: block; height: 100%; width: 100%; background: var(--accent); border-radius: inherit; }
+.tbar.low i { background: var(--bad); }
+.hearts { display: flex; gap: 4px; align-items: center; height: 36px; }
+.hearts svg { width: 26px; height: 26px; }
+.hearts .gone { opacity: .18; }
+.lm-photo { width: 100%; max-width: 440px; aspect-ratio: 4 / 3; border-radius: 4px; overflow: hidden; background: var(--line); display: grid; place-items: center; box-shadow: var(--shadow); color: var(--mount); }
+.lm-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.lm-photo .ico { width: 34%; height: auto; }
+.lm-photo.loading { background: linear-gradient(100deg, var(--line) 30%, var(--mount) 50%, var(--line) 70%); background-size: 300% 100%; animation: shimmer 1.2s linear infinite; }
+.mc-stage .flag { max-width: 400px; }
+.mc-stage { position: relative; }
+.credit-sm { font-size: 12px; color: var(--muted); }

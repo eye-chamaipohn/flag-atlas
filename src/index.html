@@ -1,0 +1,247 @@
+<title>Flag Atlas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap">
+<!-- @styles -->
+
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect x="5" y="3" width="3" height="35" rx="1.5" fill="var(--ink)"/>
+        <path d="M8 6 H34 L28 14 L34 22 H8 Z" fill="var(--accent)"/>
+        <circle cx="18" cy="14" r="4" fill="var(--signal)"/>
+      </svg>
+      <div>
+        <h1>Flag Atlas</h1>
+        <p id="tagline"></p>
+      </div>
+    </div>
+    <div class="tools">
+      <div class="modes" role="tablist" aria-label="Mode">
+        <button id="tabLearn" role="tab" aria-selected="true" data-mode="learn" data-i18n="discover">Discover</button>
+        <button id="tabQuiz" role="tab" aria-selected="false" data-mode="quiz" data-i18n="challenge">Challenge</button>
+      </div>
+      <div class="lang" role="group" aria-label="Language">
+        <button id="langEn" type="button" data-lang="en" lang="en">EN</button>
+        <button id="langTh" type="button" data-lang="th" lang="th">ไทย</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="regions" id="regions" aria-label="Filter by region"><span class="label" data-i18n="region">Region</span></nav>
+
+  <!-- Discover mode -->
+  <section id="learnView" class="learn" aria-live="polite">
+    <div class="leftcol">
+      <div class="mount">
+        <span class="code" id="lCode"></span>
+        <span class="count" id="lCount"></span>
+        <img class="flag pop" id="lFlag" alt="">
+      </div>
+      <figure class="mapcard" style="margin:0">
+        <div class="maphead">
+          <h3 data-i18n="where">Where in the world</h3>
+          <div class="mapmodes" id="mapModes" role="group" aria-label="Map view">
+            <button type="button" data-view="country" data-i18n="vCountry">Country</button>
+            <button type="button" data-view="region" data-i18n="vRegion">Region</button>
+            <button type="button" data-view="world" data-i18n="vWorld">World</button>
+          </div>
+        </div>
+        <div class="mapbox"><svg id="map" role="img" aria-labelledby="mapTitle"><title id="mapTitle"></title></svg></div>
+        <div class="mapfoot">
+          <figcaption class="mapnote" data-i18n="mapCredit">Map: Natural Earth (public domain)</figcaption>
+          <a class="gmap" id="gmapLink" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span data-i18n="gmap">Open in Google Maps</span></a>
+        </div>
+      </figure>
+    </div>
+    <article class="label-card">
+      <div class="eyebrow">
+        <span class="pill cont" id="lCont"></span>
+        <span class="pill" id="lSub"></span>
+      </div>
+      <div class="name-row">
+        <h2 class="country" id="lName"></h2>
+        <button class="say" id="sayName" type="button" data-say="name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></button>
+      </div>
+      <p class="en-name" id="lEn" hidden>English: <b id="lEnName"></b></p>
+      <p class="capital"><span><span data-i18n="capital">Capital</span>:</span> <b id="lCap"></b><button class="say sm" id="sayCap" type="button" data-say="capital"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></button></p>
+      <p class="capital"><span><span data-i18n="region">Region</span>:</span> <b id="lRegion"></b></p>
+      <div class="section">
+        <h3 data-i18n="landmarks">Landmarks</h3>
+        <ul class="landmarks" id="lLand"></ul>
+        <p class="credit" id="lCredit" hidden></p>
+      </div>
+      <div class="section">
+        <h3 data-i18n="facts">Fun facts</h3>
+        <ul class="facts" id="lFacts"></ul>
+      </div>
+      <div class="controls">
+        <button class="btn" id="lPrev" type="button"><kbd>←</kbd> <span data-i18n="prev">Previous</span></button>
+        <button class="btn primary" id="lNext" type="button"><span data-i18n="next">Next flag</span> <kbd>Space</kbd></button>
+      </div>
+    </article>
+  </section>
+
+  <!-- Challenge mode -->
+  <!-- Challenge: game picker -->
+  <section id="hubView" class="hub" hidden>
+    <div class="hub-head">
+      <h2 data-i18n="hubTitle">Choose a game</h2>
+      <p data-i18n="hubSub">Play on your own, or challenge a friend on the same keyboard.</p>
+    </div>
+    <div class="games" id="games"></div>
+  </section>
+
+  <section id="quizView" class="quiz" hidden>
+    <div class="gamebar">
+      <button class="btn" type="button" data-back><span aria-hidden="true">←</span> <span data-i18n="games">All games</span></button>
+      <h2 data-i18n="gPick">Quick Pick</h2>
+    </div>
+    <div class="stage">
+      <div class="mount">
+        <span class="code" id="qRegion"></span>
+        <span class="count" id="qCount"></span>
+        <img class="flag pop" id="qFlag" alt="">
+      </div>
+      <p class="prompt" data-i18n="prompt">Which country flies this flag?</p>
+      <div class="choices">
+        <button class="choice" id="c0" type="button"><span class="key">1</span><span class="txt"></span></button>
+        <button class="choice" id="c1" type="button"><span class="key">2</span><span class="txt"></span></button>
+      </div>
+      <div class="feedback" id="feedback" aria-live="polite"></div>
+    </div>
+    <aside class="side">
+      <div class="scoreboard">
+        <div class="stat"><div class="k" data-i18n="score">Score</div><div class="v" id="sScore">0<small>/0</small></div></div>
+        <div class="stat streak"><div class="k" data-i18n="streak">Streak</div><div class="v" id="sStreak">0</div></div>
+        <div class="stat"><div class="k" data-i18n="best">Best streak</div><div class="v" id="sBest">0</div></div>
+        <div class="stat"><div class="k" data-i18n="acc">Accuracy</div><div class="v" id="sAcc">–</div></div>
+      </div>
+      <div class="keys">
+        <h3 data-i18n="keyboard">Keyboard</h3>
+        <div><span data-i18n="kPick">Pick left / right</span><kbd>1 · 2</kbd></div>
+        <div><span data-i18n="kShow">Show correct answer</span><kbd>A</kbd></div>
+        <div><span data-i18n="kSay">Hear the name</span><kbd>P</kbd></div>
+        <div><span data-i18n="next">Next flag</span><kbd>Space</kbd></div>
+        <button class="btn" id="resetBtn" type="button" data-i18n="reset">Reset score</button>
+      </div>
+    </aside>
+  </section>
+
+  <!-- Challenge: four-choice games (Capital Quiz, Landmark Quiz, Survival) -->
+  <section id="mcView" class="quiz" hidden>
+    <div class="gamebar"><button class="btn" type="button" data-back><span aria-hidden="true">←</span> <span data-i18n="games">All games</span></button><h2 id="mcTitle"></h2></div>
+    <div class="stage">
+      <div class="mount mc-stage">
+        <span class="code" id="mcTag"></span>
+        <span class="count" id="mcRound"></span>
+        <div id="mcMedia" style="width:100%;display:grid;place-items:center"></div>
+        <div class="overlay" id="mcOverlay" hidden></div>
+      </div>
+      <div class="tbar" id="mcTimer" hidden><i></i></div>
+      <p class="prompt" id="mcPrompt"></p>
+      <div class="choices four" id="mcChoices">
+        <button class="choice" id="mc0" type="button"><span class="key">1</span><span class="txt"></span></button>
+        <button class="choice" id="mc1" type="button"><span class="key">2</span><span class="txt"></span></button>
+        <button class="choice" id="mc2" type="button"><span class="key">3</span><span class="txt"></span></button>
+        <button class="choice" id="mc3" type="button"><span class="key">4</span><span class="txt"></span></button>
+      </div>
+      <div class="feedback" id="mcFeedback" aria-live="polite"></div>
+    </div>
+    <aside class="side">
+      <div class="scoreboard" id="mcBoard"></div>
+      <div class="keys">
+        <h3 data-i18n="keyboard">Keyboard</h3>
+        <div><span data-i18n="kPick4">Pick an answer</span><kbd>1–4</kbd></div>
+        <div id="mcKeyA"><span data-i18n="kShow">Show correct answer</span><kbd>A</kbd></div>
+        <div><span data-i18n="kHearAns">Hear the answer</span><kbd>P</kbd></div>
+        <div><span data-i18n="nextQ">Next question</span><kbd>Space</kbd></div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- Challenge: Map Quiz -->
+  <section id="mqView" class="quiz" hidden>
+    <div class="gamebar"><button class="btn" type="button" data-back><span aria-hidden="true">←</span> <span data-i18n="games">All games</span></button><h2 data-i18n="gMap">Map Quiz</h2></div>
+    <div class="stage">
+      <div class="mq-ask"><img id="mqFlag" alt=""><p class="prompt" id="mqPrompt"></p></div>
+      <div class="mq-box"><svg id="mqMap" role="img" aria-labelledby="mqPrompt"></svg></div>
+      <div class="feedback" id="mqFeedback" aria-live="polite"></div>
+    </div>
+    <aside class="side">
+      <div class="scoreboard" id="mqBoard"></div>
+      <div class="keys">
+        <h3 data-i18n="keyboard">Keyboard</h3>
+        <div><span data-i18n="kClick">Choose a country</span><kbd data-i18n="clickKey">Click</kbd></div>
+        <div><span data-i18n="kShow">Show correct answer</span><kbd>A</kbd></div>
+        <div><span data-i18n="kHearAns">Hear the answer</span><kbd>P</kbd></div>
+        <div><span data-i18n="nextQ">Next question</span><kbd>Space</kbd></div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- Challenge: Flag Duel (two-player chess clock) -->
+  <section id="duelView" class="duel" hidden>
+    <div class="gamebar">
+      <button class="btn" type="button" data-back><span aria-hidden="true">←</span> <span data-i18n="games">All games</span></button>
+      <h2 data-i18n="gDuel">Flag Duel</h2>
+      <span class="spacer"></span>
+      <button class="btn" type="button" id="soundBtn"></button>
+    </div>
+
+    <div id="duelSetup" class="duel-setup">
+      <div class="panel">
+        <h3 data-i18n="players">Players</h3>
+        <div class="players">
+          <div class="player-in">
+            <label for="p1Name"><span data-i18n="p1">Player 1</span> <span class="keycap">A</span></label>
+            <input id="p1Name" type="text" maxlength="20" autocomplete="off">
+          </div>
+          <div class="player-in">
+            <label for="p2Name"><span data-i18n="p2">Player 2</span> <span class="keycap">L</span></label>
+            <input id="p2Name" type="text" maxlength="20" autocomplete="off">
+          </div>
+        </div>
+        <h3 data-i18n="timeEach">Time per player</h3>
+        <div class="times" id="timeOpts" role="group">
+          <button type="button" data-sec="30"></button>
+          <button type="button" data-sec="45"></button>
+          <button type="button" data-sec="60"></button>
+          <button type="button" data-sec="90"></button>
+        </div>
+        <div><button class="btn primary" id="duelStart" type="button"><span data-i18n="start">Start duel</span> <kbd>Enter</kbd></button></div>
+      </div>
+      <div class="panel">
+        <h3 data-i18n="rulesTitle">How to play</h3>
+        <ol class="rules" id="rules"></ol>
+      </div>
+    </div>
+
+    <div id="duelGame" hidden>
+      <div class="duel" style="gap:14px">
+        <div class="clocks">
+          <button class="clock" id="clock0" type="button"><span class="pname"></span><span class="time"></span><span class="pfoot"><span class="pk"></span><span class="pc"></span></span></button>
+          <button class="clock" id="clock1" type="button"><span class="pname"></span><span class="time"></span><span class="pfoot"><span class="pk"></span><span class="pc"></span></span></button>
+        </div>
+        <div class="mount duel-stage" id="duelStage">
+          <span class="code" id="dRegion"></span>
+          <span class="count" id="dTurn"></span>
+          <img class="flag" id="dFlag" alt="">
+          <div class="reveal" id="dReveal" hidden></div>
+          <div class="overlay" id="dOverlay" hidden></div>
+        </div>
+        <div class="duel-info">
+          <div class="duel-last" id="dLast" aria-live="polite"></div>
+          <div class="duel-acts">
+            <button class="btn" id="dPass" type="button"><span data-i18n="pass">Pass</span> <kbd>Space</kbd></button>
+            <button class="btn" id="dPause" type="button"><span data-i18n="pause">Pause</span> <kbd>Esc</kbd></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- @scripts -->

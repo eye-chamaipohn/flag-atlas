@@ -1,0 +1,13 @@
+{
+  "name": "flag-atlas",
+  "private": true,
+  "description": "Random flags of 197 countries with facts, maps and quiz games, in English and Thai.",
+  "scripts": {
+    "build": "python3 tools/build.py",
+    "check": "python3 tools/build.py --check",
+    "test": "node tests/smoke.js"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}

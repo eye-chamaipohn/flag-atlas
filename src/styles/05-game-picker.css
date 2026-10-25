@@ -1,0 +1,23 @@
+/* Challenge: game picker */
+.hub { display: flex; flex-direction: column; gap: 18px; }
+.hub-head h2 { font-family: var(--f-display); font-weight: 800; font-size: clamp(24px, 4vw, 32px); letter-spacing: -.02em; margin: 0; }
+.hub-head p { margin: 4px 0 0; color: var(--muted); }
+.games { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+@media (max-width: 1000px) { .games { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .games { grid-template-columns: minmax(0, 1fr); } }
+.game-card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+.game-art { background: var(--mount); border-bottom: 1px solid var(--line); display: grid; place-items: center; padding: 22px 16px; }
+.game-art svg { width: 100%; max-width: 220px; height: auto; display: block; }
+.game-body { padding: 20px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.game-body h3 { font-family: var(--f-display); font-weight: 800; font-size: 22px; letter-spacing: -.015em; margin: 0; }
+.game-body p { margin: 0; color: var(--muted); max-width: 52ch; }
+.game-meta { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.game-meta li { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--mount); display: inline-flex; gap: 6px; align-items: center; }
+.game-meta kbd { font-size: 10px; padding: 0 4px; }
+.game-foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.game-foot .note { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.gamebar { grid-column: 1 / -1; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.gamebar h2 { font-family: var(--f-display); font-weight: 800; font-size: 22px; letter-spacing: -.01em; margin: 0; }
+.gamebar .btn { padding: 7px 12px; font-size: 13px; }
+.gamebar .spacer { flex: 1; }
+
