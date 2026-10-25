@@ -173,5 +173,6 @@
     "Micronesia": "Микронезия",
     "Polynesia": "Полинезия"
   },
-  "inEnglish": "По-английски"
+  "inEnglish": "По-английски",
+  "regionOf": "{0}, {1}"
 }

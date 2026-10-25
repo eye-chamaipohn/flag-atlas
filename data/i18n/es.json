@@ -169,5 +169,6 @@
     "Micronesia": "Micronesia",
     "Polynesia": "Polinesia"
   },
-  "inEnglish": "Inglés"
+  "inEnglish": "Inglés",
+  "regionOf": "{0}, {1}"
 }

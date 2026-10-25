@@ -144,5 +144,6 @@
     "Oceania": "Oceania"
   },
   "sub": {},
-  "inEnglish": "English"
+  "inEnglish": "English",
+  "regionOf": "{0}, {1}"
 }

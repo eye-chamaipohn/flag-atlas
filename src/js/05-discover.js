@@ -15,7 +15,7 @@ function showCountry(c, still) {
   $("sayName").title = $("sayName").ariaLabel = t("say")(c.name);
   $("sayCap").title = $("sayCap").ariaLabel = t("say")(c.capital);
   $("lCap").textContent = l.capital;
-  $("lRegion").textContent = l.sub === l.cont ? l.cont : `${l.sub}, ${l.cont}`;
+  $("lRegion").textContent = l.sub === l.cont ? l.cont : t("regionOf")(l.sub, l.cont);
   renderLandmarks(c, l);
   showOnMap(c, l.name);
   $("lFacts").innerHTML = ""; l.facts.forEach(t => { const li = document.createElement("li"); li.textContent = t; $("lFacts").appendChild(li); });

@@ -169,5 +169,6 @@
     "West Asia": "Westasien",
     "Western Europe": "Westeuropa"
   },
-  "inEnglish": "Englisch"
+  "inEnglish": "Englisch",
+  "regionOf": "{0}, {1}"
 }

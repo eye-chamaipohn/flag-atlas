@@ -74,6 +74,13 @@ def check_ui(code, errors, warnings):
                 for form, text in v.items():
                     if form not in PLURAL_FORMS:
                         errors.append(f'{key}: "{form}" is not a CLDR plural form {sorted(PLURAL_FORMS)}')
+                    elif form in ('zero', 'one', 'two'):
+                        # Languages often say these without the number ("one flag", Arabic dual),
+                        # so the placeholder may be dropped, but no new one may appear.
+                        if not set(placeholders(text)) <= set(placeholders(ev['other'])):
+                            errors.append(f'{key}.{form}: placeholders {placeholders(text)} not in {placeholders(ev["other"])}')
+                        if tags(text) != tags(ev['other']):
+                            errors.append(f'{key}.{form}: tags {dict(tags(text))} should be {dict(tags(ev["other"]))}')
                     else:
                         compare_text(f'{key}.{form}', ev['other'], text, errors)
         elif key == 'sub':  # English shows its own subregion names, so en.sub is empty

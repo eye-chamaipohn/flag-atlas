@@ -169,5 +169,6 @@
     "Micronesia": "माइक्रोनेशिया",
     "Polynesia": "पोलिनेशिया"
   },
-  "inEnglish": "अंग्रेज़ी"
+  "inEnglish": "अंग्रेज़ी",
+  "regionOf": "{0}, {1}"
 }
