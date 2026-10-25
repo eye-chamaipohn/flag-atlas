@@ -1,0 +1,587 @@
+{
+ "al": [
+  "Albanie",
+  "Tirana",
+  [
+   "Butrint",
+   "Vieille ville de Berat",
+   "Riviera albanaise"
+  ],
+  [
+   "Les Albanais hochent la tête pour dire « non » et la secouent pour dire « oui ».",
+   "Il y a environ 170 000 bunkers de la guerre froide dans tout le pays."
+  ]
+ ],
+ "ad": [
+  "Andorre",
+  "Andorre-la-Vieille",
+  [
+   "Spa Caldea",
+   "Sant Joan de Caselles",
+   "Vallée du Madriu-Perafita-Claror"
+  ],
+  [
+   "L'Andorre est dirigée à la fois par le président de la France et par un évêque espagnol.",
+   "Elle n'a ni aéroport ni gare."
+  ]
+ ],
+ "at": [
+  "Autriche",
+  "Vienne",
+  [
+   "Château de Schönbrunn",
+   "Hallstatt",
+   "Grossglockner"
+  ],
+  [
+   "Le Tiergarten Schönbrunn, à Vienne, est le plus ancien zoo du monde : il date de 1752.",
+   "Mozart est né à Salzbourg."
+  ]
+ ],
+ "by": [
+  "Biélorussie",
+  "Minsk",
+  [
+   "Château de Mir",
+   "Forêt de Białowieża",
+   "Château de Niasvij"
+  ],
+  [
+   "Environ 40 % de la Biélorussie est couverte de forêt.",
+   "Białowieża abrite la plus grande population de bisons sauvages d'Europe."
+  ]
+ ],
+ "be": [
+  "Belgique",
+  "Bruxelles",
+  [
+   "Grand-Place de Bruxelles",
+   "Atomium",
+   "Canaux de Bruges"
+  ],
+  [
+   "La Belgique produit plus de 220 000 tonnes de chocolat par an.",
+   "Bruxelles est le siège principal de l'Union européenne."
+  ]
+ ],
+ "ba": [
+  "Bosnie-Herzégovine",
+  "Sarajevo",
+  [
+   "Vieux pont de Mostar",
+   "Cascade de Kravica",
+   "Baščaršija, Sarajevo"
+  ],
+  [
+   "Les plongeurs du Vieux pont de Mostar sautent d'environ 24 m dans la rivière.",
+   "Sarajevo a accueilli les Jeux olympiques d'hiver de 1984."
+  ]
+ ],
+ "bg": [
+  "Bulgarie",
+  "Sofia",
+  [
+   "Monastère de Rila",
+   "Cathédrale Alexandre-Nevski",
+   "Sept lacs de Rila"
+  ],
+  [
+   "La Bulgarie produit une grande partie de l'huile de rose du monde.",
+   "L'alphabet cyrillique a été mis au point dans le Premier Empire bulgare."
+  ]
+ ],
+ "hr": [
+  "Croatie",
+  "Zagreb",
+  [
+   "Lacs de Plitvice",
+   "Remparts de Dubrovnik",
+   "Palais de Dioclétien"
+  ],
+  [
+   "La cravate vient des foulards des soldats croates, appelés « cravates ».",
+   "La Croatie compte plus de 1 000 îles."
+  ]
+ ],
+ "cz": [
+  "Tchéquie",
+  "Prague",
+  [
+   "Château de Prague",
+   "Pont Charles",
+   "Český Krumlov"
+  ],
+  [
+   "Le château de Prague est l'un des plus grands ensembles de châteaux du monde.",
+   "Les Tchèques boivent plus de bière par habitant que tout autre peuple."
+  ]
+ ],
+ "dk": [
+  "Danemark",
+  "Copenhague",
+  [
+   "Nyhavn",
+   "Statue de la Petite Sirène",
+   "Château de Kronborg"
+  ],
+  [
+   "Le drapeau danois, le Dannebrog, est le plus ancien drapeau national encore utilisé.",
+   "LEGO a été inventé au Danemark ; son nom signifie « joue bien »."
+  ]
+ ],
+ "ee": [
+  "Estonie",
+  "Tallinn",
+  [
+   "Vieille ville de Tallinn",
+   "Parc national de Lahemaa",
+   "Palais de Kadriorg"
+  ],
+  [
+   "Skype a été développé par des ingénieurs estoniens.",
+   "Les Estoniens peuvent voter en ligne aux élections nationales."
+  ]
+ ],
+ "fi": [
+  "Finlande",
+  "Helsinki",
+  [
+   "Forteresse de Suomenlinna",
+   "Laponie",
+   "Cathédrale d'Helsinki"
+  ],
+  [
+   "La Finlande compte environ 188 000 lacs.",
+   "Il y a environ 3 millions de saunas pour 5,6 millions d'habitants."
+  ]
+ ],
+ "fr": [
+  "France",
+  "Paris",
+  [
+   "Tour Eiffel",
+   "Mont-Saint-Michel",
+   "Château de Versailles"
+  ],
+  [
+   "La France est le pays le plus visité du monde.",
+   "Grâce à ses territoires d'outre-mer, elle a 12 fuseaux horaires, plus que tout autre pays."
+  ]
+ ],
+ "de": [
+  "Allemagne",
+  "Berlin",
+  [
+   "Porte de Brandebourg",
+   "Château de Neuschwanstein",
+   "Cathédrale de Cologne"
+  ],
+  [
+   "L'Allemagne compte plus de 20 000 châteaux.",
+   "L'imprimerie à caractères mobiles y a été mise au point par Gutenberg."
+  ]
+ ],
+ "gr": [
+  "Grèce",
+  "Athènes",
+  [
+   "Acropole",
+   "Santorin",
+   "Monastères des Météores"
+  ],
+  [
+   "La Grèce est considérée comme le berceau de la démocratie et des Jeux olympiques.",
+   "Aucun endroit de Grèce n'est à plus d'environ 140 km de la mer."
+  ]
+ ],
+ "hu": [
+  "Hongrie",
+  "Budapest",
+  [
+   "Parlement hongrois",
+   "Bains Széchenyi",
+   "Lac Balaton"
+  ],
+  [
+   "Le Rubik's Cube a été inventé par le Hongrois Ernő Rubik.",
+   "Budapest repose sur plus de 120 sources thermales."
+  ]
+ ],
+ "is": [
+  "Islande",
+  "Reykjavik",
+  [
+   "Lagon bleu",
+   "Gullfoss",
+   "Þingvellir"
+  ],
+  [
+   "Il n'y a pas de moustiques en Islande.",
+   "Son parlement, l'Althing, fondé en 930, est l'un des plus anciens du monde."
+  ]
+ ],
+ "ie": [
+  "Irlande",
+  "Dublin",
+  [
+   "Falaises de Moher",
+   "Anneau du Kerry",
+   "Newgrange"
+  ],
+  [
+   "Newgrange est plus ancien que Stonehenge et que les pyramides de Gizeh.",
+   "Halloween trouve ses racines dans Samain, une fête irlandaise."
+  ]
+ ],
+ "it": [
+  "Italie",
+  "Rome",
+  [
+   "Colisée",
+   "Tour de Pise",
+   "Canaux de Venise"
+  ],
+  [
+   "L'Italie compte plus de sites du patrimoine mondial de l'UNESCO que tout autre pays.",
+   "Deux pays indépendants, le Vatican et Saint-Marin, se trouvent à l'intérieur de l'Italie."
+  ]
+ ],
+ "xk": [
+  "Kosovo",
+  "Pristina",
+  [
+   "Vieille ville de Prizren",
+   "Monastère de Gračanica",
+   "Gorges de la Rugova"
+  ],
+  [
+   "Le Kosovo a déclaré son indépendance en 2008.",
+   "Il a l'une des populations les plus jeunes d'Europe."
+  ]
+ ],
+ "lv": [
+  "Lettonie",
+  "Riga",
+  [
+   "Vieille ville de Riga",
+   "Palais de Rundāle",
+   "Parc national de la Gauja"
+  ],
+  [
+   "Riga possède l'une des plus grandes collections de bâtiments Art nouveau du monde.",
+   "Environ la moitié de la Lettonie est couverte de forêt."
+  ]
+ ],
+ "li": [
+  "Liechtenstein",
+  "Vaduz",
+  [
+   "Château de Vaduz",
+   "Château de Gutenberg",
+   "Station de ski de Malbun"
+  ],
+  [
+   "Le Liechtenstein est l'un des deux pays doublement enclavés.",
+   "C'est un grand producteur de fausses dents."
+  ]
+ ],
+ "lt": [
+  "Lituanie",
+  "Vilnius",
+  [
+   "Colline des Croix",
+   "Château de Trakai",
+   "Isthme de Courlande"
+  ],
+  [
+   "Le lituanien est l'une des plus anciennes langues indo-européennes encore parlées.",
+   "La colline des Croix compte plus de 100 000 croix."
+  ]
+ ],
+ "lu": [
+  "Luxembourg",
+  "Luxembourg",
+  [
+   "Casemates du Bock",
+   "Château de Vianden",
+   "Palais grand-ducal"
+  ],
+  [
+   "Le Luxembourg est le dernier grand-duché du monde.",
+   "C'est le premier pays à avoir rendu tous les transports publics gratuits, en 2020."
+  ]
+ ],
+ "mt": [
+  "Malte",
+  "La Valette",
+  [
+   "Temples de Ġgantija",
+   "La Valette",
+   "Grotte Bleue"
+  ],
+  [
+   "Les temples de Ġgantija, à Malte, sont plus anciens que les pyramides d'Égypte.",
+   "La Valette est la plus petite capitale de l'UE."
+  ]
+ ],
+ "md": [
+  "Moldavie",
+  "Chișinău",
+  [
+   "Caves à vin de Mileștii Mici",
+   "Orheiul Vechi",
+   "Forteresse de Soroca"
+  ],
+  [
+   "Mileștii Mici abrite la plus grande collection de vins du monde.",
+   "Le drapeau de la Moldavie est presque identique à celui de la Roumanie, mais il porte des armoiries."
+  ]
+ ],
+ "mc": [
+  "Monaco",
+  "Monaco",
+  [
+   "Casino de Monte-Carlo",
+   "Palais princier",
+   "Musée océanographique"
+  ],
+  [
+   "Monaco est le deuxième plus petit pays du monde.",
+   "Le drapeau de Monaco est identique à celui de l'Indonésie, à part ses proportions."
+  ]
+ ],
+ "me": [
+  "Monténégro",
+  "Podgorica",
+  [
+   "Bouches de Kotor",
+   "Monastère d'Ostrog",
+   "Parc national du Durmitor"
+  ],
+  [
+   "Le canyon de la Tara est l'un des plus profonds d'Europe.",
+   "Le Monténégro utilise l'euro, bien qu'il ne fasse pas partie de l'UE."
+  ]
+ ],
+ "nl": [
+  "Pays-Bas",
+  "Amsterdam",
+  [
+   "Canaux d'Amsterdam",
+   "Moulins de Kinderdijk",
+   "Jardins de Keukenhof"
+  ],
+  [
+   "Environ un quart des Pays-Bas se trouve sous le niveau de la mer.",
+   "Il y a plus de vélos que d'habitants dans le pays."
+  ]
+ ],
+ "mk": [
+  "Macédoine du Nord",
+  "Skopje",
+  [
+   "Lac d'Ohrid",
+   "Canyon de Matka",
+   "Forteresse de Skopje"
+  ],
+  [
+   "Le lac d'Ohrid est l'un des plus anciens lacs d'Europe : il a plus d'un million d'années.",
+   "Mère Teresa est née à Skopje."
+  ]
+ ],
+ "no": [
+  "Norvège",
+  "Oslo",
+  [
+   "Geirangerfjord",
+   "Preikestolen",
+   "Îles Lofoten"
+  ],
+  [
+   "La Norvège a fait découvrir les sushis au saumon au Japon dans les années 1980.",
+   "Dans le nord de la Norvège, le soleil ne se couche pas pendant des semaines en été."
+  ]
+ ],
+ "pl": [
+  "Pologne",
+  "Varsovie",
+  [
+   "Château du Wawel",
+   "Mine de sel de Wieliczka",
+   "Château de Malbork"
+  ],
+  [
+   "Malbork est le plus grand château du monde par sa superficie.",
+   "Marie Curie est née à Varsovie."
+  ]
+ ],
+ "pt": [
+  "Portugal",
+  "Lisbonne",
+  [
+   "Tour de Belém",
+   "Palais de Pena",
+   "Vallée du Douro"
+  ],
+  [
+   "Le Portugal est le premier producteur mondial de liège.",
+   "Sa frontière avec l'Espagne est l'une des plus anciennes frontières inchangées d'Europe."
+  ]
+ ],
+ "ro": [
+  "Roumanie",
+  "Bucarest",
+  [
+   "Château de Bran",
+   "Palais du Parlement",
+   "Monastères peints de Bucovine"
+  ],
+  [
+   "Le Palais du Parlement de Bucarest est l'un des bâtiments les plus lourds du monde.",
+   "La Roumanie abrite l'une des plus grandes populations d'ours bruns d'Europe."
+  ]
+ ],
+ "ru": [
+  "Russie",
+  "Moscou",
+  [
+   "Place Rouge et Kremlin",
+   "Lac Baïkal",
+   "Musée de l'Ermitage"
+  ],
+  [
+   "La Russie est le plus grand pays du monde : elle s'étend sur 11 fuseaux horaires.",
+   "Le lac Baïkal contient environ 20 % de l'eau douce de surface non gelée du monde."
+  ]
+ ],
+ "sm": [
+  "Saint-Marin",
+  "Saint-Marin",
+  [
+   "Trois tours de Saint-Marin",
+   "Mont Titano",
+   "Palazzo Pubblico"
+  ],
+  [
+   "Saint-Marin affirme être la plus ancienne république du monde, fondée en 301 apr. J.-C.",
+   "Il est entièrement entouré par l'Italie."
+  ]
+ ],
+ "rs": [
+  "Serbie",
+  "Belgrade",
+  [
+   "Forteresse de Belgrade",
+   "Église Saint-Sava",
+   "Monastère de Studenica"
+  ],
+  [
+   "L'inventeur Nikola Tesla était d'origine serbe.",
+   "La Serbie est l'un des plus grands exportateurs de framboises du monde."
+  ]
+ ],
+ "sk": [
+  "Slovaquie",
+  "Bratislava",
+  [
+   "Château de Spiš",
+   "Château de Bratislava",
+   "Hautes Tatras"
+  ],
+  [
+   "La Slovaquie a l'un des plus grands nombres de châteaux par habitant du monde.",
+   "C'est l'un des premiers producteurs de voitures par habitant."
+  ]
+ ],
+ "si": [
+  "Slovénie",
+  "Ljubljana",
+  [
+   "Lac de Bled",
+   "Grotte de Postojna",
+   "Triple Pont, Ljubljana"
+  ],
+  [
+   "Plus de la moitié de la Slovénie est couverte de forêt.",
+   "La grotte de Postojna a son propre train souterrain."
+  ]
+ ],
+ "es": [
+  "Espagne",
+  "Madrid",
+  [
+   "Sagrada Família",
+   "Alhambra",
+   "Musée du Prado"
+  ],
+  [
+   "L'Espagne produit près de la moitié de l'huile d'olive du monde.",
+   "Sobrino de Botín, à Madrid, est le plus ancien restaurant du monde encore en activité."
+  ]
+ ],
+ "se": [
+  "Suède",
+  "Stockholm",
+  [
+   "Musée Vasa",
+   "Icehotel",
+   "Gamla stan"
+  ],
+  [
+   "La Suède compte environ 267 000 îles.",
+   "Les prix Nobel sont remis à Stockholm chaque année en décembre."
+  ]
+ ],
+ "ch": [
+  "Suisse",
+  "Berne",
+  [
+   "Cervin",
+   "Pont de la Chapelle, Lucerne",
+   "Lac Léman"
+  ],
+  [
+   "La Suisse a quatre langues nationales.",
+   "Son drapeau est l'un des deux seuls drapeaux nationaux carrés."
+  ]
+ ],
+ "ua": [
+  "Ukraine",
+  "Kiev",
+  [
+   "Cathédrale Sainte-Sophie",
+   "Laure des Grottes de Kiev",
+   "Tunnel de l'amour, Klevan"
+  ],
+  [
+   "L'Ukraine est le plus grand pays situé entièrement en Europe.",
+   "La station Arsenalna, à Kiev, est l'une des stations de métro les plus profondes du monde."
+  ]
+ ],
+ "gb": [
+  "Royaume-Uni",
+  "Londres",
+  [
+   "Big Ben",
+   "Stonehenge",
+   "Château d'Édimbourg"
+  ],
+  [
+   "Le Royaume-Uni est formé de l'Angleterre, de l'Écosse, du pays de Galles et de l'Irlande du Nord.",
+   "Le métro de Londres est le plus ancien du monde : il a ouvert en 1863."
+  ]
+ ],
+ "va": [
+  "Vatican",
+  "Cité du Vatican",
+  [
+   "Basilique Saint-Pierre",
+   "Chapelle Sixtine",
+   "Musées du Vatican"
+  ],
+  [
+   "Le Vatican est le plus petit pays du monde, avec environ 0,44 km².",
+   "Il est protégé par la Garde suisse, fondée en 1506."
+  ]
+ ]
+}

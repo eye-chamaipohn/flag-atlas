@@ -1,0 +1,639 @@
+{
+ "ag": [
+  "Antigua-et-Barbuda",
+  "Saint John's",
+  [
+   "Nelson's Dockyard",
+   "Shirley Heights",
+   "Devil's Bridge"
+  ],
+  [
+   "On dit qu'Antigua compte 365 plages, une pour chaque jour de l'année.",
+   "Nelson's Dockyard est le seul chantier naval géorgien encore en activité au monde."
+  ]
+ ],
+ "bs": [
+  "Bahamas",
+  "Nassau",
+  [
+   "Plage des cochons, Exuma",
+   "Dean's Blue Hole",
+   "Atlantis, Paradise Island"
+  ],
+  [
+   "Le Dean's Blue Hole est l'un des trous bleus les plus profonds connus : environ 202 m.",
+   "Les Bahamas comptent environ 700 îles et cayes."
+  ]
+ ],
+ "bb": [
+  "Barbade",
+  "Bridgetown",
+  [
+   "Harrison's Cave",
+   "Plage de Bathsheba",
+   "Centre historique de Bridgetown"
+  ],
+  [
+   "La Barbade est considérée comme le berceau du rhum.",
+   "La chanteuse Rihanna est originaire de la Barbade et a été nommée héroïne nationale."
+  ]
+ ],
+ "bz": [
+  "Belize",
+  "Belmopan",
+  [
+   "Grand Trou bleu",
+   "Caracol",
+   "Barrière de corail du Belize"
+  ],
+  [
+   "Le Belize est le seul pays d'Amérique centrale qui a l'anglais comme langue officielle.",
+   "Le Grand Trou bleu est une immense doline marine d'environ 300 m de large."
+  ]
+ ],
+ "ca": [
+  "Canada",
+  "Ottawa",
+  [
+   "Chutes du Niagara",
+   "Parc national de Banff",
+   "Tour CN"
+  ],
+  [
+   "Le Canada a le plus long littoral de tous les pays.",
+   "Le Canada compte plus de lacs que tout le reste du monde réuni."
+  ]
+ ],
+ "cr": [
+  "Costa Rica",
+  "San José",
+  [
+   "Volcan Arenal",
+   "Forêt de nuages de Monteverde",
+   "Parc national Manuel Antonio"
+  ],
+  [
+   "Le Costa Rica a supprimé son armée en 1948.",
+   "Il abrite environ 5 % de la biodiversité mondiale sur seulement 0,03 % des terres émergées."
+  ]
+ ],
+ "cu": [
+  "Cuba",
+  "La Havane",
+  [
+   "Vieille Havane",
+   "Vallée de Viñales",
+   "Trinidad"
+  ],
+  [
+   "Des voitures américaines classiques des années 1950 roulent encore dans les rues de Cuba.",
+   "Cuba abrite le colibri-abeille, le plus petit oiseau du monde."
+  ]
+ ],
+ "dm": [
+  "Dominique",
+  "Roseau",
+  [
+   "Lac Bouillant",
+   "Chutes de Trafalgar",
+   "Parc national de Morne Trois Pitons"
+  ],
+  [
+   "Le drapeau de la Dominique est l'un des deux drapeaux nationaux qui contiennent du violet.",
+   "Son lac Bouillant est le deuxième plus grand lac d'eau chaude du monde."
+  ]
+ ],
+ "do": [
+  "République dominicaine",
+  "Saint-Domingue",
+  [
+   "Zone coloniale de Saint-Domingue",
+   "Punta Cana",
+   "Parc national Los Haitises"
+  ],
+  [
+   "Saint-Domingue est la plus ancienne ville fondée par des Européens dans les Amériques.",
+   "Son drapeau est le seul à représenter une Bible."
+  ]
+ ],
+ "sv": [
+  "Salvador",
+  "San Salvador",
+  [
+   "Joya de Cerén",
+   "Volcan Santa Ana",
+   "Plage d'El Tunco"
+  ],
+  [
+   "C'est le pays le plus petit et le plus densément peuplé d'Amérique centrale.",
+   "En 2021, il est devenu le premier pays à faire du bitcoin une monnaie légale."
+  ]
+ ],
+ "gd": [
+  "Grenade",
+  "Saint-Georges",
+  [
+   "Parc de sculptures sous-marines",
+   "Plage de Grand Anse",
+   "Fort George"
+  ],
+  [
+   "La Grenade est surnommée « l'île aux épices » pour sa noix de muscade.",
+   "Une noix de muscade figure sur son drapeau national."
+  ]
+ ],
+ "gt": [
+  "Guatemala",
+  "Guatemala",
+  [
+   "Tikal",
+   "Lac Atitlán",
+   "Antigua Guatemala"
+  ],
+  [
+   "Le Guatemala était le cœur de l'ancienne civilisation maya.",
+   "Son drapeau représente un quetzal, l'oiseau national, qui est aussi le nom de la monnaie."
+  ]
+ ],
+ "ht": [
+  "Haïti",
+  "Port-au-Prince",
+  [
+   "Citadelle Laferrière",
+   "Labadie",
+   "Bassin Bleu"
+  ],
+  [
+   "En 1804, Haïti est devenue la première république dirigée par des Noirs.",
+   "La Citadelle est la plus grande forteresse des Amériques."
+  ]
+ ],
+ "hn": [
+  "Honduras",
+  "Tegucigalpa",
+  [
+   "Ruines de Copán",
+   "Roatán",
+   "Parc national Pico Bonito"
+  ],
+  [
+   "Copán est célèbre pour l'Escalier hiéroglyphique, le plus long texte maya en hiéroglyphes.",
+   "Les îles de la Baie se trouvent sur la deuxième plus grande barrière de corail du monde."
+  ]
+ ],
+ "jm": [
+  "Jamaïque",
+  "Kingston",
+  [
+   "Chutes de Dunn's River",
+   "Montagnes Bleues",
+   "Musée Bob Marley"
+  ],
+  [
+   "La Jamaïque est le berceau du reggae.",
+   "C'est le seul pays dont le drapeau n'a ni rouge, ni blanc, ni bleu."
+  ]
+ ],
+ "mx": [
+  "Mexique",
+  "Mexico",
+  [
+   "Chichén Itzá",
+   "Teotihuacan",
+   "Cénotes du Yucatán"
+  ],
+  [
+   "Le Mexique a fait connaître au monde le chocolat, le piment et le maïs.",
+   "Mexico s'enfonce lentement, jusqu'à 50 cm par an dans certains quartiers."
+  ]
+ ],
+ "ni": [
+  "Nicaragua",
+  "Managua",
+  [
+   "Lac Nicaragua",
+   "Ville coloniale de Granada",
+   "Île d'Ometepe"
+  ],
+  [
+   "Le lac Nicaragua abrite des requins-bouledogues d'eau douce.",
+   "C'est le plus grand pays d'Amérique centrale."
+  ]
+ ],
+ "pa": [
+  "Panama",
+  "Panama",
+  [
+   "Canal de Panama",
+   "Îles San Blas",
+   "Casco Viejo"
+  ],
+  [
+   "Le canal de Panama relie l'océan Atlantique et l'océan Pacifique.",
+   "Au Panama, on peut voir le soleil se lever sur le Pacifique."
+  ]
+ ],
+ "kn": [
+  "Saint-Christophe-et-Niévès",
+  "Basseterre",
+  [
+   "Forteresse de Brimstone Hill",
+   "Plage de Pinney",
+   "Chemin de fer panoramique de Saint-Kitts"
+  ],
+  [
+   "C'est le plus petit pays des Amériques.",
+   "Alexander Hamilton est né à Niévès."
+  ]
+ ],
+ "lc": [
+  "Sainte-Lucie",
+  "Castries",
+  [
+   "Les Pitons",
+   "Sulphur Springs",
+   "Pigeon Island"
+  ],
+  [
+   "C'est le seul pays qui porte le nom d'une femme, sainte Lucie.",
+   "Ses Sulphur Springs sont présentées comme le seul volcan au monde où l'on entre en voiture."
+  ]
+ ],
+ "vc": [
+  "Saint-Vincent-et-les-Grenadines",
+  "Kingstown",
+  [
+   "La Soufrière",
+   "Tobago Cays",
+   "Jardin botanique de Kingstown"
+  ],
+  [
+   "Le jardin botanique de Kingstown est le plus ancien de l'hémisphère occidental.",
+   "Des scènes de Pirates des Caraïbes ont été tournées ici."
+  ]
+ ],
+ "tt": [
+  "Trinité-et-Tobago",
+  "Port-d'Espagne",
+  [
+   "Pitch Lake",
+   "Baie de Maracas",
+   "Centre naturel Asa Wright"
+  ],
+  [
+   "Le steelpan, un tambour en acier, a été inventé à Trinité.",
+   "Pitch Lake est le plus grand gisement naturel d'asphalte du monde."
+  ]
+ ],
+ "us": [
+  "États-Unis",
+  "Washington",
+  [
+   "Statue de la Liberté",
+   "Grand Canyon",
+   "Golden Gate Bridge"
+  ],
+  [
+   "Les États-Unis n'ont pas de langue nationale officielle au niveau fédéral.",
+   "Yellowstone a été le premier parc national du monde, en 1872."
+  ]
+ ],
+ "ar": [
+  "Argentine",
+  "Buenos Aires",
+  [
+   "Chutes d'Iguazú",
+   "Glacier Perito Moreno",
+   "La Boca, Buenos Aires"
+  ],
+  [
+   "L'Aconcagua est la plus haute montagne en dehors de l'Asie, avec 6 961 m.",
+   "Le tango est né à Buenos Aires."
+  ]
+ ],
+ "bo": [
+  "Bolivie",
+  "Sucre",
+  [
+   "Salar d'Uyuni",
+   "Lac Titicaca",
+   "Tiwanaku"
+  ],
+  [
+   "Le salar d'Uyuni est le plus grand désert de sel du monde.",
+   "La Paz est le siège de gouvernement le plus haut du monde."
+  ]
+ ],
+ "br": [
+  "Brésil",
+  "Brasilia",
+  [
+   "Christ Rédempteur",
+   "Forêt amazonienne",
+   "Chutes d'Iguaçu"
+  ],
+  [
+   "Le Brésil a gagné la Coupe du monde de la FIFA cinq fois, plus que tout autre pays.",
+   "Environ 60 % de la forêt amazonienne se trouve au Brésil."
+  ]
+ ],
+ "cl": [
+  "Chili",
+  "Santiago",
+  [
+   "Moaï de l'île de Pâques",
+   "Torres del Paine",
+   "Désert d'Atacama"
+  ],
+  [
+   "L'Atacama est le désert non polaire le plus sec de la planète.",
+   "Le Chili mesure plus de 4 300 km de long, mais seulement 177 km de large en moyenne."
+  ]
+ ],
+ "co": [
+  "Colombie",
+  "Bogota",
+  [
+   "Vieille ville de Carthagène",
+   "Caño Cristales",
+   "Cité perdue (Ciudad Perdida)"
+  ],
+  [
+   "La Colombie est le seul pays d'Amérique du Sud qui a des côtes à la fois sur le Pacifique et sur la mer des Caraïbes.",
+   "Caño Cristales est surnommée la « rivière aux cinq couleurs »."
+  ]
+ ],
+ "ec": [
+  "Équateur",
+  "Quito",
+  [
+   "Îles Galápagos",
+   "Cotopaxi",
+   "Vieille ville de Quito"
+  ],
+  [
+   "Le pays doit son nom à l'équateur, qui le traverse.",
+   "Le sommet du Chimborazo est le point le plus éloigné du centre de la Terre."
+  ]
+ ],
+ "gy": [
+  "Guyana",
+  "Georgetown",
+  [
+   "Chutes de Kaieteur",
+   "Cathédrale Saint-Georges",
+   "Forêt d'Iwokrama"
+  ],
+  [
+   "Kaieteur est l'une des chutes d'eau à saut unique les plus puissantes du monde.",
+   "Le Guyana est le seul pays d'Amérique du Sud qui a l'anglais comme langue officielle."
+  ]
+ ],
+ "py": [
+  "Paraguay",
+  "Asuncion",
+  [
+   "Barrage d'Itaipu",
+   "Missions jésuites de Trinidad",
+   "Gran Chaco"
+  ],
+  [
+   "La plupart des Paraguayens parlent à la fois l'espagnol et le guarani.",
+   "Son drapeau porte des emblèmes différents sur ses deux faces."
+  ]
+ ],
+ "pe": [
+  "Pérou",
+  "Lima",
+  [
+   "Machu Picchu",
+   "Montagne arc-en-ciel",
+   "Lignes de Nazca"
+  ],
+  [
+   "Le Pérou compte plus de 3 000 variétés de pommes de terre.",
+   "Les lignes de Nazca sont d'immenses dessins tracés au sol, que l'on voit mieux depuis le ciel."
+  ]
+ ],
+ "sr": [
+  "Suriname",
+  "Paramaribo",
+  [
+   "Centre historique de Paramaribo",
+   "Réserve naturelle du Suriname central",
+   "Parc naturel de Brownsberg"
+  ],
+  [
+   "Le Suriname est le plus petit pays d'Amérique du Sud.",
+   "Plus de 90 % du pays est couvert de forêt."
+  ]
+ ],
+ "uy": [
+  "Uruguay",
+  "Montevideo",
+  [
+   "Colonia del Sacramento",
+   "« La Mano » de Punta del Este",
+   "Palacio Salvo"
+  ],
+  [
+   "L'Uruguay a organisé et remporté la première Coupe du monde de la FIFA, en 1930.",
+   "En Uruguay, il y a environ quatre vaches par habitant."
+  ]
+ ],
+ "ve": [
+  "Venezuela",
+  "Caracas",
+  [
+   "Salto Ángel",
+   "Mont Roraima",
+   "Los Roques"
+  ],
+  [
+   "Le Salto Ángel est la plus haute chute d'eau ininterrompue du monde, avec 979 m.",
+   "Le Venezuela possède les plus grandes réserves prouvées de pétrole au monde."
+  ]
+ ],
+ "au": [
+  "Australie",
+  "Canberra",
+  [
+   "Opéra de Sydney",
+   "Grande Barrière de corail",
+   "Uluru"
+  ],
+  [
+   "La Grande Barrière de corail est la plus grande structure vivante de la Terre.",
+   "L'Australie est le seul continent occupé par un seul pays."
+  ]
+ ],
+ "fj": [
+  "Fidji",
+  "Suva",
+  [
+   "Îles Mamanuca",
+   "Bains de boue de Sabeto",
+   "Jardin du Géant endormi"
+  ],
+  [
+   "Les Fidji comptent environ 330 îles.",
+   "L'équipe fidjienne de rugby à sept a remporté l'or olympique en 2016 et en 2021."
+  ]
+ ],
+ "ki": [
+  "Kiribati",
+  "Tarawa",
+  [
+   "Aire protégée des îles Phoenix",
+   "Kiritimati (île Christmas)",
+   "Sites de la Seconde Guerre mondiale à Tarawa"
+  ],
+  [
+   "Les Kiribati sont le seul pays situé dans les quatre hémisphères.",
+   "Kiritimati est l'un des premiers endroits à fêter chaque nouvelle année."
+  ]
+ ],
+ "mh": [
+  "Îles Marshall",
+  "Majuro",
+  [
+   "Atoll de Bikini",
+   "Atoll de Majuro",
+   "Atoll de Jaluit"
+  ],
+  [
+   "Le maillot de bain bikini doit son nom à l'atoll de Bikini.",
+   "Les habitants fabriquaient de célèbres cartes de navigation avec des bâtons et des coquillages."
+  ]
+ ],
+ "fm": [
+  "Micronésie",
+  "Palikir",
+  [
+   "Nan Madol",
+   "Épaves du lagon de Chuuk",
+   "Monnaie de pierre de Yap"
+  ],
+  [
+   "L'île de Yap est célèbre pour ses énormes disques de pierre qui servent de monnaie.",
+   "Nan Madol est une cité en ruine construite sur des îlots artificiels."
+  ]
+ ],
+ "nr": [
+  "Nauru",
+  "Yaren (de facto)",
+  [
+   "Baie d'Anibare",
+   "Lagune de Buada",
+   "Command Ridge"
+  ],
+  [
+   "Nauru est le plus petit État insulaire du monde.",
+   "Il n'a pas de capitale officielle."
+  ]
+ ],
+ "nz": [
+  "Nouvelle-Zélande",
+  "Wellington",
+  [
+   "Milford Sound",
+   "Hobbiton",
+   "Grottes de vers luisants de Waitomo"
+  ],
+  [
+   "La Nouvelle-Zélande a été le premier pays à donner le droit de vote aux femmes, en 1893.",
+   "Il y a environ cinq moutons par habitant."
+  ]
+ ],
+ "pw": [
+  "Palaos",
+  "Ngerulmud",
+  [
+   "Rock Islands",
+   "Lac aux méduses",
+   "Site de plongée de Blue Corner"
+  ],
+  [
+   "Les Palaos ont créé l'un des premiers sanctuaires de requins du monde.",
+   "Le lac aux méduses abrite des millions de méduses qui ont presque perdu leur capacité à piquer."
+  ]
+ ],
+ "pg": [
+  "Papouasie-Nouvelle-Guinée",
+  "Port Moresby",
+  [
+   "Piste de Kokoda",
+   "Mont Wilhelm",
+   "Fleuve Sepik"
+  ],
+  [
+   "La Papouasie-Nouvelle-Guinée compte plus de 800 langues, plus que tout autre pays.",
+   "Ses oiseaux de paradis sont connus pour leurs danses de séduction élaborées."
+  ]
+ ],
+ "ws": [
+  "Samoa",
+  "Apia",
+  [
+   "To Sua Ocean Trench",
+   "Souffleurs d'Alofaaga",
+   "Musée Robert Louis Stevenson"
+  ],
+  [
+   "En 2011, les Samoa ont sauté un jour pour passer à l'ouest de la ligne de changement de date.",
+   "Le mot « tatouage » vient du mot samoan « tatau »."
+  ]
+ ],
+ "sb": [
+  "Îles Salomon",
+  "Honiara",
+  [
+   "Lagon de Marovo",
+   "Sites de la Seconde Guerre mondiale à Guadalcanal",
+   "Île de Tetepare"
+  ],
+  [
+   "Le lagon de Marovo est l'un des plus grands lagons d'eau salée du monde.",
+   "La monnaie de coquillages est encore utilisée lors de certaines cérémonies traditionnelles."
+  ]
+ ],
+ "to": [
+  "Tonga",
+  "Nuku'alofa",
+  [
+   "Trilithe Ha'amonga 'a Maui",
+   "Souffleurs de Mapu'a 'a Vaca",
+   "Îles Vava'u"
+  ],
+  [
+   "Les Tonga sont le seul pays du Pacifique à n'avoir jamais été officiellement colonisé.",
+   "Chaque année, des baleines à bosse viennent mettre bas dans les eaux des Tonga."
+  ]
+ ],
+ "tv": [
+  "Tuvalu",
+  "Funafuti",
+  [
+   "Aire de conservation de Funafuti",
+   "Lagon de Funafuti",
+   "Atoll de Nanumea"
+  ],
+  [
+   "Tuvalu gagne de l'argent en louant son nom de domaine Internet, « .tv ».",
+   "Son point le plus haut ne se trouve qu'à environ 4,6 m au-dessus du niveau de la mer."
+  ]
+ ],
+ "vu": [
+  "Vanuatu",
+  "Port-Vila",
+  [
+   "Mont Yasur",
+   "Saut du gaul à Pentecôte",
+   "Champagne Beach"
+  ],
+  [
+   "Le saut du gaul, sur l'île de Pentecôte, a inspiré le saut à l'élastique moderne.",
+   "Le Vanuatu possède un bureau de poste sous-marin."
+  ]
+ ]
+}

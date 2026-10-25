@@ -1,6 +1,8 @@
 # Flag Atlas
 
-A web app that shows random flags from 197 countries. It opens in the visitor's browser language (see `data/i18n/languages.json`; currently English and Thai, more being added) and has a language menu in the header. Pronunciation is always English.
+A web app that shows random flags from 197 countries, in 12 languages: English, Español, Français, Português, Deutsch, Bahasa Indonesia, Русский, العربية (right-to-left), हिन्दी, ไทย, 中文 and 日本語. It opens in the visitor's browser language and has a language menu in the header. Pronunciation is always English.
+
+The translations were machine-generated and checked automatically for completeness, but not yet reviewed by native speakers; corrections are welcome in `data/i18n/` and `data/countries/<lang>/`.
 
 - **Discover**: the flag, country name, region, capital, landmarks and fun facts.
 - **Pronunciation**: tap the speaker icon (or press `P`) to hear the country or capital name in English, using your browser's built-in voice.

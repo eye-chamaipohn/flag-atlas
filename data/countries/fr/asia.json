@@ -1,0 +1,639 @@
+{
+ "af": [
+  "Afghanistan",
+  "Kaboul",
+  [
+   "Lacs de Band-e Amir",
+   "Minaret de Djam",
+   "Mosquée bleue de Mazar-e Charif"
+  ],
+  [
+   "L'Afghanistan n'a pas d'accès à la mer et a des frontières avec six pays.",
+   "Le minaret de Djam mesure environ 65 m de haut et a été construit dans les années 1190."
+  ]
+ ],
+ "am": [
+  "Arménie",
+  "Erevan",
+  [
+   "Monastère de Geghard",
+   "Lac Sevan",
+   "Monastère de Tatev"
+  ],
+  [
+   "L'Arménie a été le premier pays à adopter le christianisme comme religion d'État, en 301 apr. J.-C.",
+   "Les Ailes de Tatev sont l'un des plus longs téléphériques à va-et-vient du monde."
+  ]
+ ],
+ "az": [
+  "Azerbaïdjan",
+  "Bakou",
+  [
+   "Flame Towers",
+   "Art rupestre de Gobustan",
+   "Yanar Dag, la colline qui brûle"
+  ],
+  [
+   "L'Azerbaïdjan est surnommé le « pays du feu » pour ses flammes de gaz naturel.",
+   "Près de la moitié des volcans de boue du monde se trouvent en Azerbaïdjan."
+  ]
+ ],
+ "bh": [
+  "Bahreïn",
+  "Manama",
+  [
+   "Qal'at al-Bahreïn",
+   "Arbre de vie",
+   "Bahrain World Trade Center"
+  ],
+  [
+   "Bahreïn est un archipel de plus de 30 îles.",
+   "Son Arbre de vie est un arbre de 400 ans qui pousse seul au milieu du désert."
+  ]
+ ],
+ "bd": [
+  "Bangladesh",
+  "Dacca",
+  [
+   "Mangrove des Sundarbans",
+   "Plage de Cox's Bazar",
+   "Mosquée aux soixante dômes"
+  ],
+  [
+   "Cox's Bazar est l'une des plus longues plages naturelles du monde, avec environ 120 km.",
+   "Les Sundarbans abritent le tigre du Bengale."
+  ]
+ ],
+ "bt": [
+  "Bhoutan",
+  "Thimphou",
+  [
+   "Paro Taktsang (Nid du Tigre)",
+   "Dzong de Punakha",
+   "Col de Dochula"
+  ],
+  [
+   "Le Bhoutan mesure son progrès avec le « Bonheur national brut ».",
+   "C'est l'un des rares pays au monde dont le bilan carbone est négatif."
+  ]
+ ],
+ "bn": [
+  "Brunei",
+  "Bandar Seri Begawan",
+  [
+   "Mosquée Omar Ali Saifuddin",
+   "Kampong Ayer, le village sur l'eau",
+   "Parc national d'Ulu Temburong"
+  ],
+  [
+   "Kampong Ayer est l'un des plus grands villages sur l'eau du monde.",
+   "L'Istana Nurul Iman, à Brunei, est le plus grand palais résidentiel du monde."
+  ]
+ ],
+ "kh": [
+  "Cambodge",
+  "Phnom Penh",
+  [
+   "Angkor Vat",
+   "Temple du Bayon",
+   "Lac Tonlé Sap"
+  ],
+  [
+   "Angkor Vat est le plus grand monument religieux du monde.",
+   "Le Cambodge est le seul pays dont le drapeau national représente un bâtiment."
+  ]
+ ],
+ "cn": [
+  "Chine",
+  "Pékin",
+  [
+   "Grande Muraille de Chine",
+   "Cité interdite",
+   "Armée de terre cuite"
+  ],
+  [
+   "La Chine utilise un seul fuseau horaire alors qu'elle s'étend sur cinq fuseaux géographiques.",
+   "Le papier, l'imprimerie, la boussole et la poudre à canon ont tous été inventés en Chine."
+  ]
+ ],
+ "cy": [
+  "Chypre",
+  "Nicosie",
+  [
+   "Pétra tou Romiou",
+   "Kourion",
+   "Églises peintes du Troodos"
+  ],
+  [
+   "Selon la légende, Aphrodite est née de la mer à Pétra tou Romiou.",
+   "Le drapeau de Chypre montre la forme de l'île elle-même."
+  ]
+ ],
+ "ge": [
+  "Géorgie",
+  "Tbilissi",
+  [
+   "Église de la Trinité de Guerguéti",
+   "Ville troglodyte d'Ouplistsikhé",
+   "Forteresse de Narikala"
+  ],
+  [
+   "La Géorgie est l'une des plus anciennes régions viticoles, avec 8 000 ans d'histoire.",
+   "L'alphabet géorgien est unique et ne sert qu'aux langues liées au géorgien."
+  ]
+ ],
+ "in": [
+  "Inde",
+  "New Delhi",
+  [
+   "Taj Mahal",
+   "Temple d'Or, Amritsar",
+   "Hawa Mahal de Jaipur"
+  ],
+  [
+   "L'Inde est le pays le plus peuplé du monde.",
+   "Les échecs et la notion de zéro trouvent leur origine dans l'Inde ancienne."
+  ]
+ ],
+ "id": [
+  "Indonésie",
+  "Jakarta",
+  [
+   "Borobudur",
+   "Parc national de Komodo",
+   "Mont Bromo"
+  ],
+  [
+   "L'Indonésie compte plus de 17 000 îles.",
+   "Les dragons de Komodo, les plus grands lézards du monde, ne vivent qu'ici."
+  ]
+ ],
+ "ir": [
+  "Iran",
+  "Téhéran",
+  [
+   "Persépolis",
+   "Place Naghch-e Djahan, Ispahan",
+   "Mosquée Nasir al-Molk"
+  ],
+  [
+   "L'Iran est l'une des plus anciennes civilisations continues du monde.",
+   "On y tisse des tapis persans depuis au moins 2 500 ans."
+  ]
+ ],
+ "iq": [
+  "Irak",
+  "Bagdad",
+  [
+   "Ziggourat d'Ur",
+   "Babylone",
+   "Citadelle d'Erbil"
+  ],
+  [
+   "C'est dans l'ancienne Mésopotamie, l'Irak actuel, que l'écriture a été inventée.",
+   "La citadelle d'Erbil est l'un des plus anciens lieux habités sans interruption sur Terre."
+  ]
+ ],
+ "il": [
+  "Israël",
+  "Jérusalem",
+  [
+   "Mur des Lamentations",
+   "Massada",
+   "Mer Morte"
+  ],
+  [
+   "Les rives de la mer Morte sont le point le plus bas des terres émergées.",
+   "L'eau de la mer Morte est si salée qu'on y flotte facilement."
+  ]
+ ],
+ "jp": [
+  "Japon",
+  "Tokyo",
+  [
+   "Mont Fuji",
+   "Sanctuaire Fushimi Inari",
+   "Château de Himeji"
+  ],
+  [
+   "Le Japon compte plus de 6 800 îles.",
+   "Ses trains à grande vitesse ont en moyenne moins d'une minute de retard."
+  ]
+ ],
+ "jo": [
+  "Jordanie",
+  "Amman",
+  [
+   "Pétra",
+   "Wadi Rum",
+   "Jerash"
+  ],
+  [
+   "Pétra a été taillée dans une roche de couleur rose il y a plus de 2 000 ans.",
+   "Le Wadi Rum a joué le rôle de la planète Mars dans plusieurs films."
+  ]
+ ],
+ "kz": [
+  "Kazakhstan",
+  "Astana",
+  [
+   "Canyon de Charyn",
+   "Cosmodrome de Baïkonour",
+   "Tour Baïterek"
+  ],
+  [
+   "Le Kazakhstan est le plus grand pays sans accès à la mer du monde.",
+   "Le premier vol spatial habité est parti de Baïkonour en 1961."
+  ]
+ ],
+ "kw": [
+  "Koweït",
+  "Koweït",
+  [
+   "Tours du Koweït",
+   "Grande Mosquée",
+   "Île de Failaka"
+  ],
+  [
+   "Le dinar koweïtien est l'unité monétaire qui a la plus forte valeur au monde.",
+   "Le Koweït n'a ni lac naturel ni rivière permanente."
+  ]
+ ],
+ "kg": [
+  "Kirghizistan",
+  "Bichkek",
+  [
+   "Lac Issyk-Koul",
+   "Lac Song-Koul",
+   "Caravansérail de Tash Rabat"
+  ],
+  [
+   "Plus de 90 % du Kirghizistan est montagneux.",
+   "L'Issyk-Koul ne gèle jamais, bien qu'il se trouve en haute montagne."
+  ]
+ ],
+ "la": [
+  "Laos",
+  "Vientiane",
+  [
+   "Luang Prabang",
+   "Plaine des Jarres",
+   "Chutes de Kuang Si"
+  ],
+  [
+   "Le Laos est le seul pays d'Asie du Sud-Est sans accès à la mer.",
+   "La plaine des Jarres compte des milliers de jarres en pierre anciennes dont on ignore l'usage."
+  ]
+ ],
+ "lb": [
+  "Liban",
+  "Beyrouth",
+  [
+   "Baalbek",
+   "Grotte de Jeita",
+   "Byblos"
+  ],
+  [
+   "Byblos est l'une des plus anciennes villes habitées sans interruption du monde.",
+   "Le cèdre du drapeau est un symbole du Liban depuis des millénaires."
+  ]
+ ],
+ "my": [
+  "Malaisie",
+  "Kuala Lumpur",
+  [
+   "Tours jumelles Petronas",
+   "Mont Kinabalu",
+   "Grottes de Batu"
+  ],
+  [
+   "Les tours Petronas ont été les plus hauts bâtiments du monde de 1998 à 2004.",
+   "La forêt tropicale de Bornéo a environ 130 millions d'années."
+  ]
+ ],
+ "mv": [
+  "Maldives",
+  "Malé",
+  [
+   "Mosquée du Vendredi de Malé",
+   "Atoll Baa",
+   "Baie d'Hanifaru"
+  ],
+  [
+   "Les Maldives sont le pays le plus bas du monde, à 1,5 m en moyenne au-dessus du niveau de la mer.",
+   "Elles comptent environ 1 200 îles coralliennes."
+  ]
+ ],
+ "mn": [
+  "Mongolie",
+  "Oulan-Bator",
+  [
+   "Désert de Gobi",
+   "Statue équestre de Gengis Khan",
+   "Lac Khövsgöl"
+  ],
+  [
+   "La Mongolie est le pays le moins densément peuplé du monde.",
+   "De nombreux fossiles de dinosaures, dont les premiers œufs de dinosaures, ont été trouvés dans le Gobi."
+  ]
+ ],
+ "mm": [
+  "Birmanie",
+  "Naypyidaw",
+  [
+   "Temples de Bagan",
+   "Pagode Shwedagon",
+   "Lac Inle"
+  ],
+  [
+   "Bagan compte plus de 2 000 temples et pagodes bouddhistes encore debout.",
+   "Les pêcheurs du lac Inle rament avec une jambe enroulée autour de la rame."
+  ]
+ ],
+ "np": [
+  "Népal",
+  "Katmandou",
+  [
+   "Mont Everest",
+   "Stupa de Boudhanath",
+   "Temple de Pashupatinath"
+  ],
+  [
+   "Le Népal a le seul drapeau national qui n'est pas rectangulaire.",
+   "8 des 10 plus hautes montagnes du monde se trouvent au Népal."
+  ]
+ ],
+ "kp": [
+  "Corée du Nord",
+  "Pyongyang",
+  [
+   "Mont Paektu",
+   "Palais Kumsusan",
+   "Tour du Juche"
+  ],
+  [
+   "La Corée du Nord utilise son propre calendrier, qui compte les années à partir de 1912.",
+   "Le mont Paektu est le plus haut sommet de la péninsule coréenne."
+  ]
+ ],
+ "om": [
+  "Oman",
+  "Mascate",
+  [
+   "Grande Mosquée du sultan Qabous",
+   "Désert des Wahiba",
+   "Fort de Nizwa"
+  ],
+  [
+   "Le commerce de l'encens à Oman remonte à des milliers d'années.",
+   "La Grande Mosquée possède l'un des plus grands tapis tissés à la main du monde."
+  ]
+ ],
+ "pk": [
+  "Pakistan",
+  "Islamabad",
+  [
+   "K2",
+   "Mosquée Badshahi",
+   "Mohenjo-daro"
+  ],
+  [
+   "Le K2, la deuxième plus haute montagne du monde, se trouve au Pakistan.",
+   "Mohenjo-daro a été l'une des premières villes planifiées du monde."
+  ]
+ ],
+ "ps": [
+  "Palestine",
+  "Ramallah (admin.)",
+  [
+   "Basilique de la Nativité, Bethléem",
+   "Vieille ville d'Hébron",
+   "Palais d'Hisham, Jéricho"
+  ],
+  [
+   "Jéricho est souvent présentée comme la plus ancienne ville du monde.",
+   "La Palestine est connue pour la culture de l'olivier et pour une broderie faite main appelée tatreez."
+  ]
+ ],
+ "ph": [
+  "Philippines",
+  "Manille",
+  [
+   "Collines de Chocolat",
+   "Rizières en terrasses de Banaue",
+   "Rivière souterraine de Puerto Princesa"
+  ],
+  [
+   "Les Philippines comptent plus de 7 600 îles.",
+   "En temps de guerre, leur drapeau est hissé avec le rouge en haut."
+  ]
+ ],
+ "qa": [
+  "Qatar",
+  "Doha",
+  [
+   "Musée d'Art islamique",
+   "Khor Al Adaid (mer intérieure)",
+   "Souq Waqif"
+  ],
+  [
+   "En 2022, le Qatar a accueilli la première Coupe du monde de la FIFA au Moyen-Orient.",
+   "Son drapeau est le seul dont la largeur dépasse le double de la hauteur (11:28)."
+  ]
+ ],
+ "sa": [
+  "Arabie saoudite",
+  "Riyad",
+  [
+   "Masjid al-Haram, La Mecque",
+   "Hégra (Al-Ula)",
+   "Kingdom Centre"
+  ],
+  [
+   "L'Arabie saoudite n'a aucune rivière permanente.",
+   "Le Rub al-Khali est le plus grand désert de sable continu du monde."
+  ]
+ ],
+ "sg": [
+  "Singapour",
+  "Singapour",
+  [
+   "Marina Bay Sands",
+   "Gardens by the Bay",
+   "Merlion"
+  ],
+  [
+   "Singapour est une cité-État composée de 64 îles.",
+   "La vente de chewing-gum y est interdite depuis 1992."
+  ]
+ ],
+ "kr": [
+  "Corée du Sud",
+  "Séoul",
+  [
+   "Palais Gyeongbokgung",
+   "Île de Jeju",
+   "Temple Bulguksa"
+  ],
+  [
+   "L'alphabet coréen, le hangeul, a été créé en 1443 par le roi Sejong.",
+   "La Corée du Sud a l'une des connexions Internet les plus rapides du monde."
+  ]
+ ],
+ "lk": [
+  "Sri Lanka",
+  "Sri Jayawardenepura Kotte",
+  [
+   "Sigiriya",
+   "Temple de la Dent",
+   "Pont aux neuf arches"
+  ],
+  [
+   "En 1960, le Sri Lanka a élu la première femme Première ministre du monde.",
+   "C'est l'un des plus grands exportateurs de thé, connu sous le nom de thé de Ceylan."
+  ]
+ ],
+ "sy": [
+  "Syrie",
+  "Damas",
+  [
+   "Palmyre",
+   "Krak des Chevaliers",
+   "Mosquée des Omeyyades"
+  ],
+  [
+   "Damas est l'une des plus anciennes villes habitées sans interruption.",
+   "La plus ancienne mélodie connue, l'Hymne hourrite, a été découverte à Ougarit."
+  ]
+ ],
+ "tw": [
+  "Taïwan",
+  "Taipei",
+  [
+   "Taipei 101",
+   "Gorges de Taroko",
+   "Lac du Soleil et de la Lune"
+  ],
+  [
+   "Le thé aux perles (bubble tea) a été inventé à Taïwan dans les années 1980.",
+   "Taipei 101 possède une énorme boule amortisseuse de 660 tonnes pour résister aux séismes."
+  ]
+ ],
+ "tj": [
+  "Tadjikistan",
+  "Douchanbé",
+  [
+   "Route du Pamir",
+   "Lac Iskanderkoul",
+   "Forteresse de Hissar"
+  ],
+  [
+   "Environ 93 % du Tadjikistan est montagneux.",
+   "La route du Pamir est l'une des routes les plus hautes du monde."
+  ]
+ ],
+ "th": [
+  "Thaïlande",
+  "Bangkok",
+  [
+   "Grand Palais",
+   "Wat Arun",
+   "Îles Phi Phi"
+  ],
+  [
+   "La Thaïlande est le seul pays d'Asie du Sud-Est qui n'a jamais été colonisé par des Européens.",
+   "Le nom cérémoniel complet de Bangkok est l'un des plus longs noms de lieux du monde."
+  ]
+ ],
+ "tl": [
+  "Timor oriental",
+  "Dili",
+  [
+   "Cristo Rei de Dili",
+   "Île d'Atauro",
+   "Mont Ramelau"
+  ],
+  [
+   "En 2002, le Timor oriental est devenu le premier nouveau pays du XXIe siècle.",
+   "Les eaux autour d'Atauro ont l'une des plus grandes diversités de poissons de récif jamais relevées."
+  ]
+ ],
+ "tr": [
+  "Turquie",
+  "Ankara",
+  [
+   "Sainte-Sophie",
+   "Cappadoce",
+   "Pamukkale"
+  ],
+  [
+   "Istanbul s'étend sur deux continents, l'Europe et l'Asie.",
+   "Göbekli Tepe a environ 11 000 ans : il est plus ancien que Stonehenge."
+  ]
+ ],
+ "tm": [
+  "Turkménistan",
+  "Achgabat",
+  [
+   "Cratère de gaz de Darvaza",
+   "Merv antique",
+   "Achgabat, la ville de marbre blanc"
+  ],
+  [
+   "Le cratère de Darvaza, la « Porte de l'Enfer », brûle depuis 1971.",
+   "Achgabat détient le record du plus grand nombre de bâtiments en marbre blanc."
+  ]
+ ],
+ "ae": [
+  "Émirats arabes unis",
+  "Abou Dabi",
+  [
+   "Burj Khalifa",
+   "Grande Mosquée Cheikh Zayed",
+   "Palm Jumeirah"
+  ],
+  [
+   "La Burj Khalifa est le plus haut bâtiment du monde, avec 828 m.",
+   "Les Émirats arabes unis sont une fédération de sept émirats."
+  ]
+ ],
+ "uz": [
+  "Ouzbékistan",
+  "Tachkent",
+  [
+   "Registan, Samarcande",
+   "Itchan Kala, Khiva",
+   "Vieille ville de Boukhara"
+  ],
+  [
+   "L'Ouzbékistan est l'un des deux seuls pays doublement enclavés.",
+   "Samarcande était une grande étape de la route de la soie."
+  ]
+ ],
+ "vn": [
+  "Viêt Nam",
+  "Hanoï",
+  [
+   "Baie d'Ha Long",
+   "Vieille ville de Hội An",
+   "Grotte de Sơn Đoòng"
+  ],
+  [
+   "Sơn Đoòng est la plus grande galerie de grotte du monde.",
+   "Le Viêt Nam est l'un des plus grands exportateurs de café du monde."
+  ]
+ ],
+ "ye": [
+  "Yémen",
+  "Sanaa",
+  [
+   "Vieille ville de Sanaa",
+   "Gratte-ciel en terre de Shibam",
+   "Île de Socotra"
+  ],
+  [
+   "Shibam est surnommée le « Manhattan du désert » pour ses maisons-tours en briques de terre crue.",
+   "Les dragonniers de Socotra ne poussent nulle part ailleurs."
+  ]
+ ]
+}

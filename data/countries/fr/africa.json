@@ -1,0 +1,704 @@
+{
+ "dz": [
+  "Algérie",
+  "Alger",
+  [
+   "Casbah d'Alger",
+   "Art rupestre du Tassili n'Ajjer",
+   "Ruines romaines de Timgad"
+  ],
+  [
+   "L'Algérie est le plus grand pays d'Afrique par sa superficie.",
+   "Plus de 80 % du pays est couvert par le désert du Sahara."
+  ]
+ ],
+ "ao": [
+  "Angola",
+  "Luanda",
+  [
+   "Chutes de Kalandula",
+   "Faille de Tundavala",
+   "Forteresse de São Miguel"
+  ],
+  [
+   "L'Angola est l'un des plus grands producteurs de pétrole d'Afrique.",
+   "L'hippotrague noir géant, symbole national, ne vit qu'en Angola."
+  ]
+ ],
+ "bj": [
+  "Bénin",
+  "Porto-Novo",
+  [
+   "Palais royaux d'Abomey",
+   "Village sur pilotis de Ganvié",
+   "Parc national de la Pendjari"
+  ],
+  [
+   "Le Bénin est considéré comme le berceau du vaudou (Vodun).",
+   "Ganvié est l'un des plus grands villages lacustres d'Afrique, entièrement construit sur pilotis."
+  ]
+ ],
+ "bw": [
+  "Botswana",
+  "Gaborone",
+  [
+   "Delta de l'Okavango",
+   "Parc national de Chobe",
+   "Salines de Makgadikgadi"
+  ],
+  [
+   "Le Botswana abrite la plus grande population d'éléphants du monde.",
+   "L'Okavango est un delta intérieur qui n'atteint jamais la mer."
+  ]
+ ],
+ "bf": [
+  "Burkina Faso",
+  "Ouagadougou",
+  [
+   "Pics de Sindou",
+   "Ruines de Loropéni",
+   "Grande Mosquée de Bobo-Dioulasso"
+  ],
+  [
+   "Son nom signifie « pays des hommes intègres ».",
+   "Ouagadougou accueille le FESPACO, le plus grand festival de cinéma d'Afrique."
+  ]
+ ],
+ "bi": [
+  "Burundi",
+  "Gitega",
+  [
+   "Lac Tanganyika",
+   "Chutes de Karera",
+   "Parc national de la Kibira"
+  ],
+  [
+   "Les tambourinaires royaux du Burundi sont inscrits au patrimoine immatériel de l'UNESCO.",
+   "Le lac Tanganyika est le deuxième lac le plus profond du monde."
+  ]
+ ],
+ "cv": [
+  "Cap-Vert",
+  "Praia",
+  [
+   "Volcan Pico do Fogo",
+   "Cidade Velha",
+   "Cratère salin de Pedra de Lume"
+  ],
+  [
+   "Le Cap-Vert est un archipel de 10 îles volcaniques dans l'Atlantique.",
+   "C'est le pays de la morna, une musique rendue célèbre par Cesária Évora."
+  ]
+ ],
+ "cm": [
+  "Cameroun",
+  "Yaoundé",
+  [
+   "Mont Cameroun",
+   "Parc national de Waza",
+   "Réserve de faune du Dja"
+  ],
+  [
+   "On surnomme le Cameroun « l'Afrique en miniature » pour la variété de ses paysages.",
+   "On y parle plus de 250 langues locales, en plus du français et de l'anglais."
+  ]
+ ],
+ "cf": [
+  "République centrafricaine",
+  "Bangui",
+  [
+   "Réserve de Dzanga-Sangha",
+   "Chutes de Boali",
+   "Parc national du Manovo-Gounda-Saint-Floris"
+  ],
+  [
+   "Le pays se trouve presque exactement au centre géographique de l'Afrique.",
+   "Dzanga Bai est célèbre pour ses rassemblements d'éléphants de forêt."
+  ]
+ ],
+ "td": [
+  "Tchad",
+  "N'Djaména",
+  [
+   "Lac Tchad",
+   "Plateau de l'Ennedi",
+   "Parc national de Zakouma"
+  ],
+  [
+   "Le Tchad doit son nom au lac Tchad, qui a rétréci d'environ 90 % depuis les années 1960.",
+   "Le plateau de l'Ennedi possède des arches de pierre naturelles et un art rupestre très ancien."
+  ]
+ ],
+ "km": [
+  "Comores",
+  "Moroni",
+  [
+   "Mont Karthala",
+   "Vieille ville de Moroni",
+   "Parc marin de Mohéli"
+  ],
+  [
+   "Les Comores sont l'un des premiers producteurs mondiaux d'ylang-ylang, utilisé en parfumerie.",
+   "Le mont Karthala est l'un des plus grands volcans actifs de la planète."
+  ]
+ ],
+ "cg": [
+  "Congo",
+  "Brazzaville",
+  [
+   "Parc national d'Odzala-Kokoua",
+   "Basilique Sainte-Anne",
+   "Rapides du fleuve Congo"
+  ],
+  [
+   "Brazzaville et Kinshasa, de part et d'autre du fleuve Congo, sont les deux capitales les plus proches du monde.",
+   "Environ deux tiers du pays sont couverts de forêt tropicale."
+  ]
+ ],
+ "cd": [
+  "RD Congo",
+  "Kinshasa",
+  [
+   "Parc national des Virunga",
+   "Volcan Nyiragongo",
+   "Fleuve Congo"
+  ],
+  [
+   "La RD Congo est le deuxième plus grand pays d'Afrique.",
+   "Le Congo est le fleuve le plus profond du monde : il dépasse 220 m de profondeur par endroits."
+  ]
+ ],
+ "ci": [
+  "Côte d'Ivoire",
+  "Yamoussoukro",
+  [
+   "Basilique Notre-Dame-de-la-Paix",
+   "Parc national de Taï",
+   "Grand-Bassam"
+  ],
+  [
+   "La Côte d'Ivoire est le premier producteur mondial de cacao.",
+   "Sa basilique de Yamoussoukro compte parmi les plus grandes églises du monde."
+  ]
+ ],
+ "dj": [
+  "Djibouti",
+  "Djibouti",
+  [
+   "Lac Assal",
+   "Lac Abbé",
+   "Forêt du Day"
+  ],
+  [
+   "Le lac Assal est le point le plus bas d'Afrique, à 155 m sous le niveau de la mer.",
+   "Le lac Assal est aussi l'un des lacs les plus salés de la planète."
+  ]
+ ],
+ "eg": [
+  "Égypte",
+  "Le Caire",
+  [
+   "Pyramides de Gizeh",
+   "Abou Simbel",
+   "Vallée des Rois"
+  ],
+  [
+   "La Grande Pyramide a été la plus haute construction humaine pendant environ 3 800 ans.",
+   "Environ 95 % des Égyptiens vivent à quelques kilomètres du Nil."
+  ]
+ ],
+ "gq": [
+  "Guinée équatoriale",
+  "Malabo",
+  [
+   "Île de Bioko",
+   "Parc national de Monte Alén",
+   "Cathédrale de Malabo"
+  ],
+  [
+   "C'est le seul pays d'Afrique qui a l'espagnol comme langue officielle.",
+   "La capitale, Malabo, se trouve sur une île et non sur le continent."
+  ]
+ ],
+ "er": [
+  "Érythrée",
+  "Asmara",
+  [
+   "Architecture moderniste d'Asmara",
+   "Archipel des Dahlak",
+   "Site antique de Qohaito"
+  ],
+  [
+   "Asmara est inscrite à l'UNESCO pour ses bâtiments modernistes italiens des années 1930.",
+   "Le littoral de l'Érythrée sur la mer Rouge s'étend sur plus de 1 000 km."
+  ]
+ ],
+ "sz": [
+  "Eswatini",
+  "Mbabane",
+  [
+   "Réserve naturelle de Mlilwane",
+   "Rocher de Sibebe",
+   "Parc national royal de Hlane"
+  ],
+  [
+   "L'Eswatini est l'une des dernières monarchies absolues du monde.",
+   "Le rocher de Sibebe est l'un des plus grands dômes de granite de la planète."
+  ]
+ ],
+ "et": [
+  "Éthiopie",
+  "Addis-Abeba",
+  [
+   "Églises rupestres de Lalibela",
+   "Monts Simien",
+   "Obélisques d'Aksoum"
+  ],
+  [
+   "L'Éthiopie utilise son propre calendrier, qui a environ 7 à 8 ans de retard sur le calendrier grégorien.",
+   "On pense que le café a été découvert en Éthiopie."
+  ]
+ ],
+ "ga": [
+  "Gabon",
+  "Libreville",
+  [
+   "Parc national de Loango",
+   "Parc national de la Lopé",
+   "Pointe Denis"
+  ],
+  [
+   "Environ 88 % du Gabon est couvert de forêt tropicale.",
+   "À Loango, on voit parfois des hippopotames surfer sur les vagues de l'océan."
+  ]
+ ],
+ "gm": [
+  "Gambie",
+  "Banjul",
+  [
+   "Île Kunta Kinteh",
+   "Réserve naturelle d'Abuko",
+   "Cercles de pierres de Wassu"
+  ],
+  [
+   "La Gambie est le plus petit pays d'Afrique continentale.",
+   "Elle est presque entièrement entourée par le Sénégal."
+  ]
+ ],
+ "gh": [
+  "Ghana",
+  "Accra",
+  [
+   "Château de Cape Coast",
+   "Passerelle dans la canopée de Kakum",
+   "Lac Volta"
+  ],
+  [
+   "Le Ghana a été la première colonie d'Afrique subsaharienne à obtenir son indépendance, en 1957.",
+   "Le lac Volta est l'un des plus grands lacs artificiels du monde par sa superficie."
+  ]
+ ],
+ "gn": [
+  "Guinée",
+  "Conakry",
+  [
+   "Mont Nimba",
+   "Massif du Fouta-Djalon",
+   "Îles de Los"
+  ],
+  [
+   "La Guinée possède environ un quart des réserves de bauxite connues dans le monde.",
+   "Les fleuves Niger, Sénégal et Gambie prennent tous leur source dans les hautes terres de Guinée."
+  ]
+ ],
+ "gw": [
+  "Guinée-Bissau",
+  "Bissau",
+  [
+   "Archipel des Bijagos",
+   "Parc national d'Orango",
+   "Fort de Cacheu"
+  ],
+  [
+   "Dans les îles Bijagos, des hippopotames d'eau salée nagent dans la mer.",
+   "La noix de cajou est le principal produit d'exportation du pays."
+  ]
+ ],
+ "ke": [
+  "Kenya",
+  "Nairobi",
+  [
+   "Maasai Mara",
+   "Mont Kenya",
+   "Vieille ville de Lamu"
+  ],
+  [
+   "Nairobi possède un parc national avec des lions, juste à côté des gratte-ciel de la ville.",
+   "Les coureurs kényans ont remporté une très grande partie des marathons du monde."
+  ]
+ ],
+ "ls": [
+  "Lesotho",
+  "Maseru",
+  [
+   "Chutes de Maletsunyane",
+   "Col de Sani",
+   "Thaba Bosiu"
+  ],
+  [
+   "Le Lesotho est entièrement entouré par l'Afrique du Sud.",
+   "C'est le seul pays situé entièrement à plus de 1 000 m d'altitude."
+  ]
+ ],
+ "lr": [
+  "Liberia",
+  "Monrovia",
+  [
+   "Parc national de Sapo",
+   "Île Providence",
+   "Chute de Kpatawee"
+  ],
+  [
+   "Le Liberia est la plus ancienne république d'Afrique, fondée en 1847.",
+   "Sa capitale, Monrovia, doit son nom au président américain James Monroe."
+  ]
+ ],
+ "ly": [
+  "Libye",
+  "Tripoli",
+  [
+   "Leptis Magna",
+   "Vieille ville de Ghadamès",
+   "Cyrène"
+  ],
+  [
+   "Plus de 90 % de la Libye est désertique.",
+   "Leptis Magna est l'une des villes romaines les mieux conservées de la Méditerranée."
+  ]
+ ],
+ "mg": [
+  "Madagascar",
+  "Antananarivo",
+  [
+   "Allée des Baobabs",
+   "Tsingy de Bemaraha",
+   "Parc national de Ranomafana"
+  ],
+  [
+   "Environ 90 % de la faune de Madagascar ne se trouve nulle part ailleurs sur Terre.",
+   "À l'état naturel, les lémuriens ne vivent qu'à Madagascar."
+  ]
+ ],
+ "mw": [
+  "Malawi",
+  "Lilongwe",
+  [
+   "Lac Malawi",
+   "Mont Mulanje",
+   "Parc national de Liwonde"
+  ],
+  [
+   "Le lac Malawi compte plus d'espèces de poissons que tout autre lac au monde.",
+   "Le Malawi est surnommé « le cœur chaleureux de l'Afrique »."
+  ]
+ ],
+ "ml": [
+  "Mali",
+  "Bamako",
+  [
+   "Grande Mosquée de Djenné",
+   "Tombouctou",
+   "Falaise de Bandiagara"
+  ],
+  [
+   "La Grande Mosquée de Djenné est le plus grand bâtiment en briques de terre crue du monde.",
+   "Mansa Moussa, du Mali, est souvent présenté comme la personne la plus riche de l'histoire."
+  ]
+ ],
+ "mr": [
+  "Mauritanie",
+  "Nouakchott",
+  [
+   "Œil du Sahara",
+   "Chinguetti",
+   "Banc d'Arguin"
+  ],
+  [
+   "La structure de Richat, l'« Œil du Sahara », est visible depuis l'espace.",
+   "Son train de minerai de fer est l'un des plus longs trains du monde."
+  ]
+ ],
+ "mu": [
+  "Maurice",
+  "Port-Louis",
+  [
+   "Morne Brabant",
+   "Terre des Sept Couleurs",
+   "Aapravasi Ghat"
+  ],
+  [
+   "Maurice était le seul endroit au monde où vivait le dodo, disparu depuis le XVIIe siècle.",
+   "Au large du Morne, l'île offre l'illusion d'une « cascade sous-marine »."
+  ]
+ ],
+ "ma": [
+  "Maroc",
+  "Rabat",
+  [
+   "Place Jemaa el-Fna, Marrakech",
+   "Chefchaouen, la ville bleue",
+   "Mosquée Hassan-II"
+  ],
+  [
+   "L'université Al Quaraouiyine, à Fès, est la plus ancienne université encore en activité.",
+   "Le Maroc est le premier exportateur mondial de phosphate."
+  ]
+ ],
+ "mz": [
+  "Mozambique",
+  "Maputo",
+  [
+   "Archipel de Bazaruto",
+   "Île de Mozambique",
+   "Parc national de Gorongosa"
+  ],
+  [
+   "Le drapeau du Mozambique est le seul drapeau national qui représente un fusil moderne.",
+   "Le pays possède environ 2 500 km de côtes sur l'océan Indien."
+  ]
+ ],
+ "na": [
+  "Namibie",
+  "Windhoek",
+  [
+   "Dunes de Sossusvlei",
+   "Parc national d'Etosha",
+   "Côte des Squelettes"
+  ],
+  [
+   "Le Namib est considéré comme le plus vieux désert du monde.",
+   "La Namibie a été le premier pays à inscrire la protection de l'environnement dans sa constitution."
+  ]
+ ],
+ "ne": [
+  "Niger",
+  "Niamey",
+  [
+   "Massif de l'Aïr",
+   "Grande Mosquée d'Agadez",
+   "Parc national du W"
+  ],
+  [
+   "Le Niger doit son nom au fleuve Niger.",
+   "Agadez possède le plus haut minaret en terre crue du monde."
+  ]
+ ],
+ "ng": [
+  "Nigeria",
+  "Abuja",
+  [
+   "Zuma Rock",
+   "Rocher d'Olumo",
+   "Forêt sacrée d'Osun-Osogbo"
+  ],
+  [
+   "Le Nigeria est le pays le plus peuplé d'Afrique.",
+   "Son industrie du cinéma, Nollywood, produit plus de films par an qu'Hollywood."
+  ]
+ ],
+ "rw": [
+  "Rwanda",
+  "Kigali",
+  [
+   "Parc national des Volcans",
+   "Lac Kivu",
+   "Forêt de Nyungwe"
+  ],
+  [
+   "Le Rwanda est surnommé le « pays des mille collines ».",
+   "Il a interdit les sacs plastiques en 2008, et Kigali est réputée pour sa propreté."
+  ]
+ ],
+ "st": [
+  "Sao Tomé-et-Principe",
+  "Sao Tomé",
+  [
+   "Pico Cão Grande",
+   "Parc national d'Obô",
+   "Roça Agostinho Neto"
+  ],
+  [
+   "C'est le deuxième plus petit pays d'Afrique.",
+   "L'équateur passe par Ilhéu das Rolas, un îlot situé au sud."
+  ]
+ ],
+ "sn": [
+  "Sénégal",
+  "Dakar",
+  [
+   "Île de Gorée",
+   "Lac Rose",
+   "Monument de la Renaissance africaine"
+  ],
+  [
+   "Dakar est la ville la plus à l'ouest de l'Afrique continentale.",
+   "Le lac Rose devient rose à cause d'algues qui aiment le sel."
+  ]
+ ],
+ "sc": [
+  "Seychelles",
+  "Victoria",
+  [
+   "Vallée de Mai",
+   "Anse Source d'Argent",
+   "Atoll d'Aldabra"
+  ],
+  [
+   "Le palmier coco de mer, qui pousse ici, produit la plus grosse graine du monde.",
+   "Aldabra abrite plus de 100 000 tortues géantes."
+  ]
+ ],
+ "sl": [
+  "Sierra Leone",
+  "Freetown",
+  [
+   "Île de Tiwai",
+   "Île de Bunce",
+   "Sanctuaire de chimpanzés de Tacugama"
+  ],
+  [
+   "Freetown a été fondée en 1792 pour accueillir des esclaves libérés.",
+   "Son nom vient du portugais et signifie « montagnes du lion »."
+  ]
+ ],
+ "so": [
+  "Somalie",
+  "Mogadiscio",
+  [
+   "Peintures rupestres de Laas Geel",
+   "Plage du Lido",
+   "Îles Bajuni"
+  ],
+  [
+   "La Somalie possède le plus long littoral d'Afrique continentale.",
+   "Laas Geel abrite certaines des peintures rupestres les mieux conservées d'Afrique."
+  ]
+ ],
+ "za": [
+  "Afrique du Sud",
+  "Pretoria",
+  [
+   "Montagne de la Table",
+   "Parc national Kruger",
+   "Robben Island"
+  ],
+  [
+   "L'Afrique du Sud a trois capitales : Pretoria, Le Cap et Bloemfontein.",
+   "Elle a 12 langues officielles."
+  ]
+ ],
+ "ss": [
+  "Soudan du Sud",
+  "Djouba",
+  [
+   "Parc national de Boma",
+   "Marais du Sudd",
+   "Monts Imatong"
+  ],
+  [
+   "Le Soudan du Sud est le plus jeune pays du monde, indépendant depuis 2011.",
+   "Le Sudd est l'une des plus grandes zones humides du monde."
+  ]
+ ],
+ "sd": [
+  "Soudan",
+  "Khartoum",
+  [
+   "Pyramides de Méroé",
+   "Djebel Barkal",
+   "Confluent des deux Nils"
+  ],
+  [
+   "Le Soudan compte plus de pyramides antiques que l'Égypte : plus de 200.",
+   "Le Nil Bleu et le Nil Blanc se rejoignent à Khartoum."
+  ]
+ ],
+ "tz": [
+  "Tanzanie",
+  "Dodoma",
+  [
+   "Kilimandjaro",
+   "Parc national du Serengeti",
+   "Stone Town de Zanzibar"
+  ],
+  [
+   "Le Kilimandjaro est la plus haute montagne d'Afrique, avec 5 895 m.",
+   "Le cratère du Ngorongoro est la plus grande caldeira volcanique intacte du monde."
+  ]
+ ],
+ "tg": [
+  "Togo",
+  "Lomé",
+  [
+   "Koutammakou",
+   "Lac Togo",
+   "Marché aux fétiches d'Akodessewa"
+  ],
+  [
+   "Par endroits, le Togo ne mesure qu'environ 50 km de large.",
+   "Le Koutammakou est connu pour ses maisons en terre en forme de tour, appelées takienta."
+  ]
+ ],
+ "tn": [
+  "Tunisie",
+  "Tunis",
+  [
+   "Carthage",
+   "Amphithéâtre d'El Jem",
+   "Sidi Bou Saïd"
+  ],
+  [
+   "Des scènes de Star Wars ont été tournées en Tunisie : Tatooine doit son nom à la ville de Tataouine.",
+   "El Jem possède l'un des plus grands amphithéâtres romains jamais construits."
+  ]
+ ],
+ "ug": [
+  "Ouganda",
+  "Kampala",
+  [
+   "Forêt impénétrable de Bwindi",
+   "Chutes Murchison",
+   "Source du Nil, Jinja"
+  ],
+  [
+   "Environ la moitié des gorilles des montagnes du monde vivent en Ouganda.",
+   "Winston Churchill a surnommé l'Ouganda « la perle de l'Afrique »."
+  ]
+ ],
+ "zm": [
+  "Zambie",
+  "Lusaka",
+  [
+   "Chutes Victoria",
+   "Parc national de South Luangwa",
+   "Lac Kariba"
+  ],
+  [
+   "Les chutes Victoria sont parmi les plus grandes chutes d'eau du monde.",
+   "On pense que les safaris à pied sont nés à South Luangwa."
+  ]
+ ],
+ "zw": [
+  "Zimbabwe",
+  "Harare",
+  [
+   "Grand Zimbabwe",
+   "Chutes Victoria",
+   "Parc national de Hwange"
+  ],
+  [
+   "Le pays doit son nom au Grand Zimbabwe, une cité médiévale en pierre.",
+   "Le Zimbabwe a 16 langues officielles."
+  ]
+ ]
+}
