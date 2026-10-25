@@ -1,13 +1,10 @@
-let lang = "en";
-try { lang = localStorage.getItem("flagatlas:lang") === '"th"' ? "th" : "en"; } catch (e) {}
-const t = k => I18N[lang][k];
 const esc = s => String(s).replace(/[&<>"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
 // Localized view of a country; falls back to English when a translation is missing.
 function L(c) {
-  const th = lang === "th" && TH[c.code];
+  const x = COUNTRY_TEXT[lang] && COUNTRY_TEXT[lang][c.code];
   return {
-    name: th ? th[0] : c.name, capital: th ? th[1] : c.capital,
-    landmarks: th ? th[2] : c.landmarks, facts: th ? th[3] : c.facts,
+    name: x ? x[0] : c.name, capital: x ? x[1] : c.capital,
+    landmarks: x ? x[2] : c.landmarks, facts: x ? x[3] : c.facts,
     cont: t("cont")[c.cont] || c.cont, sub: t("sub")[c.sub] || c.sub
   };
 }

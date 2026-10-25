@@ -1,7 +1,7 @@
 /* Map Quiz */
 .mq-ask { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
 .mq-ask img { width: 72px; aspect-ratio: 4 / 3; box-shadow: var(--shadow); border-radius: 2px; object-fit: cover; }
-.mq-ask .prompt { text-align: left; }
+.mq-ask .prompt { text-align: start; }
 .mq-box { border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--ocean); }
 #mqMap { display: block; width: 100%; height: auto; max-width: 100%; aspect-ratio: 16 / 10; cursor: crosshair; touch-action: manipulation; }
 #mqMap .land { fill: var(--land); stroke: var(--land-edge); stroke-width: .4; vector-effect: non-scaling-stroke; }

@@ -109,7 +109,7 @@ function duelPause(auto) {
     duel.phase = duel.resumeTo; duelLoop();
   }
 }
-function duelName(c) { const l = L(c); return lang === "th" ? `${l.name} (${c.name})` : c.name; }
+function duelName(c) { const l = L(c); return lang !== "en" ? `${l.name} (${c.name})` : c.name; }
 function paintDuel() {
   const playing = duel.phase !== "setup";
   $("soundBtn").textContent = soundOn ? t("soundOn") : t("soundOff");

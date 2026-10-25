@@ -39,6 +39,13 @@
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
+/* Letter-spacing breaks joined and complex scripts, so it is switched off for them. */
+:lang(ar) *, :lang(hi) *, :lang(th) *, :lang(zh) *, :lang(ja) * { letter-spacing: 0 !important; }
+/* Right-to-left (Arabic): the page mirrors, but the world maps and the duel clocks keep their
+   physical layout (player 1's key A is on the left of the keyboard). */
+[dir="rtl"] .arr { display: inline-block; transform: scaleX(-1); }
+[dir="rtl"] .clocks, [dir="rtl"] .players, [dir="rtl"] .mapbox, [dir="rtl"] .mq-box { direction: ltr; }
+[dir="rtl"] .clock > *, [dir="rtl"] .player-in { direction: rtl; }
 body {
   background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.5;
   padding-left: max(16px, env(safe-area-inset-left, 0px));

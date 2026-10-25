@@ -1,6 +1,6 @@
 # Flag Atlas
 
-A web app that shows random flags from 197 countries, in English and Thai.
+A web app that shows random flags from 197 countries. It opens in the visitor's browser language (see `data/i18n/languages.json`; currently English and Thai, more being added) and has a language menu in the header. Pronunciation is always English.
 
 - **Discover**: the flag, country name, region, capital, landmarks and fun facts.
 - **Pronunciation**: tap the speaker icon (or press `P`) to hear the country or capital name in English, using your browser's built-in voice.
@@ -36,7 +36,7 @@ src/
   styles/*.css        one file per area, combined in file-name order
   js/*.js             one file per feature, combined in file-name order into one script
                         00-data        placeholders the build fills with the data below
-                        01-i18n        all interface text, English and Thai
+                        01-i18n        language detection and text lookup (t, L)
                         02-core        helpers, storage, region filter, random decks
                         04-world-map   shared SVG map builder (Discover map and Map Quiz)
                         05-discover    Discover mode
@@ -46,11 +46,14 @@ src/
                         14-init        language switch and start-up
 data/
   countries/en/*.json [code, name, continent, subregion, capital, [landmarks], [facts]] per country
-  countries/th/*.json Thai text keyed by code: [name, capital, [landmarks], [facts]]
+  countries/<lang>/   translated country text keyed by code: [name, capital, [landmarks], [facts]]
+  i18n/languages.json the language menu: code, native name, locale, text direction
+  i18n/<lang>.json    interface text for one language
   flags/<code>.svg    flag images
   map.json            pre-projected world map (generated, see below)
 tools/
   build.py            builds index.html; --check for CI; --fragment for the Claude Artifact copy
+  check_lang.py       checks a translation against English (python3 tools/check_lang.py --all)
   build_map.py        regenerates data/map.json (run tools/fetch_map_sources.sh first)
 tests/smoke.js        opens index.html in Chromium and plays through every screen
 ```
@@ -58,13 +61,17 @@ tests/smoke.js        opens index.html in Chromium and plays through every scree
 ### Common changes
 
 - **Fix or add a fact, landmark or capital:** edit `data/countries/en/<region>.json` and the
-  matching entry in `data/countries/th/`. The build checks that both have the same number of
-  landmarks and facts.
-- **Add a country:** add its row in `data/countries/en/`, its Thai entry, its flag as
+  matching entry in every other `data/countries/<lang>/` folder. The build checks that every
+  language has the same number of landmarks and facts as English.
+- **Add a country:** add its row in `data/countries/en/`, its entry in each other language, its flag as
   `data/flags/<code>.svg`, then run `tools/build_map.py` so it gets a map shape.
-- **Add a language:** add a block to `I18N` in `src/js/01-i18n.js`, a `data/countries/<lang>/`
-  folder, a button next to EN / ไทย in `src/index.html`, and load the new data in
-  `tools/build.py` the same way Thai is loaded.
+- **Add a language:** add it to `data/i18n/languages.json` (code, name in its own script,
+  locale, `ltr` or `rtl`), copy `data/i18n/en.json` to `data/i18n/<code>.json` and translate it,
+  and add `data/countries/<code>/` with the same four files as `data/countries/th/`. Then run
+  `python3 tools/check_lang.py <code>`: it checks every key, `{0}` placeholder, `<kbd>` tag,
+  plural form and country before the build will accept the language.
+- **Change interface text:** edit `data/i18n/<code>.json`. `{0}` marks where a value goes, and
+  objects like `{"one": …, "other": …}` are plural forms (CLDR categories) chosen by the number.
 - **Add a game:** add an entry to `GAMES` in `src/js/07-screens-and-hub.js` (its number key is
   its position in the list), a `<section>` for its screen in `src/index.html`, and its keys in
   `src/js/13-keyboard.js`.

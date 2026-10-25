@@ -23,10 +23,11 @@
         <button id="tabLearn" role="tab" aria-selected="true" data-mode="learn" data-i18n="discover">Discover</button>
         <button id="tabQuiz" role="tab" aria-selected="false" data-mode="quiz" data-i18n="challenge">Challenge</button>
       </div>
-      <div class="lang" role="group" aria-label="Language">
-        <button id="langEn" type="button" data-lang="en" lang="en">EN</button>
-        <button id="langTh" type="button" data-lang="th" lang="th">ไทย</button>
-      </div>
+      <label class="lang">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
+        <span class="sr-only">Language</span>
+        <select id="langSel" aria-label="Language"></select>
+      </label>
     </div>
   </header>
 
@@ -65,7 +66,7 @@
         <h2 class="country" id="lName"></h2>
         <button class="say" id="sayName" type="button" data-say="name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></button>
       </div>
-      <p class="en-name" id="lEn" hidden>English: <b id="lEnName"></b></p>
+      <p class="en-name" id="lEn" hidden><span data-i18n="inEnglish">English</span>: <b id="lEnName"></b></p>
       <p class="capital"><span><span data-i18n="capital">Capital</span>:</span> <b id="lCap"></b><button class="say sm" id="sayCap" type="button" data-say="capital"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></button></p>
       <p class="capital"><span><span data-i18n="region">Region</span>:</span> <b id="lRegion"></b></p>
       <div class="section">
@@ -96,7 +97,7 @@
 
   <section id="quizView" class="quiz" hidden>
     <div class="gamebar">
-      <button class="btn" type="button" data-back><span aria-hidden="true">←</span> <span data-i18n="games">All games</span></button>
+      <button class="btn" type="button" data-back><span class="arr" aria-hidden="true">←</span> <span data-i18n="games">All games</span></button>
       <h2 data-i18n="gPick">Quick Pick</h2>
     </div>
     <div class="stage">
@@ -132,7 +133,7 @@
 
   <!-- Challenge: four-choice games (Capital Quiz, Landmark Quiz, Survival) -->
   <section id="mcView" class="quiz" hidden>
-    <div class="gamebar"><button class="btn" type="button" data-back><span aria-hidden="true">←</span> <span data-i18n="games">All games</span></button><h2 id="mcTitle"></h2></div>
+    <div class="gamebar"><button class="btn" type="button" data-back><span class="arr" aria-hidden="true">←</span> <span data-i18n="games">All games</span></button><h2 id="mcTitle"></h2></div>
     <div class="stage">
       <div class="mount mc-stage">
         <span class="code" id="mcTag"></span>
@@ -164,7 +165,7 @@
 
   <!-- Challenge: Map Quiz -->
   <section id="mqView" class="quiz" hidden>
-    <div class="gamebar"><button class="btn" type="button" data-back><span aria-hidden="true">←</span> <span data-i18n="games">All games</span></button><h2 data-i18n="gMap">Map Quiz</h2></div>
+    <div class="gamebar"><button class="btn" type="button" data-back><span class="arr" aria-hidden="true">←</span> <span data-i18n="games">All games</span></button><h2 data-i18n="gMap">Map Quiz</h2></div>
     <div class="stage">
       <div class="mq-ask"><img id="mqFlag" alt=""><p class="prompt" id="mqPrompt"></p></div>
       <div class="mq-box"><svg id="mqMap" role="img" aria-labelledby="mqPrompt"></svg></div>
@@ -185,7 +186,7 @@
   <!-- Challenge: Flag Duel (two-player chess clock) -->
   <section id="duelView" class="duel" hidden>
     <div class="gamebar">
-      <button class="btn" type="button" data-back><span aria-hidden="true">←</span> <span data-i18n="games">All games</span></button>
+      <button class="btn" type="button" data-back><span class="arr" aria-hidden="true">←</span> <span data-i18n="games">All games</span></button>
       <h2 data-i18n="gDuel">Flag Duel</h2>
       <span class="spacer"></span>
       <button class="btn" type="button" id="soundBtn"></button>

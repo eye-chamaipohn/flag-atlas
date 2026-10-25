@@ -118,7 +118,7 @@ function paintMc() {
     const explain = mc.game === "capital" ? t("capA")(esc(la.capital), esc(la.name)) : mc.game === "landmark" ? t("lmA")(esc(lmName), esc(la.name)) : t("survA")(esc(la.name));
     const credit = q.photo ? ` <a class="credit-sm" href="${esc(q.photo.file ? "https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(q.photo.file) : q.photo.page)}" target="_blank" rel="noopener">${esc(t("photoCredit"))}</a>` : "";
     fb.className = "feedback " + (ok ? "good" : "bad");
-    fb.innerHTML = `<span class="tag">${esc(tag)}</span><span>${explain}${credit}</span> <button class="say sm" type="button" aria-label="${esc(t("say")(mcSay()))}" title="${esc(t("say")(mcSay()))}">${SPK_ICON}</button> <button class="link" type="button">${esc(t("learn"))}</button>${mc.over ? "" : ` <span style="margin-left:auto">${t("pressNextQ")}</span>`}`;
+    fb.innerHTML = `<span class="tag">${esc(tag)}</span><span>${explain}${credit}</span> <button class="say sm" type="button" aria-label="${esc(t("say")(mcSay()))}" title="${esc(t("say")(mcSay()))}">${SPK_ICON}</button> <button class="link" type="button">${esc(t("learn"))}</button>${mc.over ? "" : ` <span style="margin-inline-start:auto">${t("pressNextQ")}</span>`}`;
     const sayBtn = fb.querySelector(".say");
     if (!canSpeak) sayBtn.hidden = true;
     sayBtn.addEventListener("click", () => speak(mcSay(), sayBtn));

@@ -9,9 +9,12 @@ header { display: flex; flex-wrap: wrap; align-items: center; justify-content: s
 .modes button[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); }
 
 .tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-.lang { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; gap: 2px; background: var(--surface); }
-.lang button { border: 0; background: transparent; padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; color: var(--muted); }
-.lang button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.lang { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 999px; padding: 0 4px 0 12px; background: var(--surface); color: var(--muted); }
+.lang:focus-within { outline: 3px solid var(--signal); outline-offset: 2px; }
+.lang svg { width: 16px; height: 16px; flex: none; }
+.lang select { font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); background: transparent; border: 0; padding: 9px 8px 9px 2px; cursor: pointer; outline: none; max-width: 11em; }
+.lang select option { color: var(--ink); background: var(--surface); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 :lang(th) .country { letter-spacing: 0; line-height: 1.25; }
 :lang(th) .brand h1 { letter-spacing: 0; }
 

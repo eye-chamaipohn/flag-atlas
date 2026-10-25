@@ -11,7 +11,8 @@ Inputs:
     src/styles/*.css        concatenated in file-name order
     src/js/*.js             concatenated in file-name order (one shared global scope)
     data/countries/en/*.json  rows: [code, name, continent, subregion, capital, [landmarks], [facts]]
-    data/countries/th/*.json  {code: [name, capital, [landmarks], [facts]]}
+    data/countries/<lang>/*.json  {code: [name, capital, [landmarks], [facts]]} for each other language
+    data/i18n/languages.json  the language menu; data/i18n/<lang>.json  interface text
     data/flags/<code>.svg   flag images (flag-icons, MIT)
     data/map.json           pre-projected world map (regenerate with tools/build_map.py)
 
@@ -52,20 +53,29 @@ def load_countries():
     return rows
 
 
-def load_thai(rows):
-    th = {}
-    for f in sorted(glob.glob(os.path.join(ROOT, 'data/countries/th/*.json'))):
-        th.update(load_json(f))
-    src = {r[0]: r for r in rows}
-    for code, v in th.items():
-        if code not in src:
-            fail(f'Thai entry {code!r} has no English row')
-        if len(v) != 4 or len(v[2]) != len(src[code][5]) or len(v[3]) != len(src[code][6]):
-            fail(f'Thai entry {code!r} must be [name, capital, landmarks, facts] with the same counts as English')
-    missing = sorted(set(src) - set(th))
-    if missing:
-        print(f'build: warning: no Thai text for {missing}; English is shown instead', file=sys.stderr)
-    return th
+def load_languages():
+    """Interface text and country text for every language in data/i18n/languages.json that has
+    files. Each one must pass tools/check_lang.py; a language without files is skipped."""
+    sys.path.insert(0, os.path.join(ROOT, 'tools'))
+    from check_lang import check
+    langs, i18n, text = [], {}, {}
+    for meta in load_json(os.path.join(ROOT, 'data/i18n/languages.json')):
+        code = meta['code']
+        if not os.path.exists(os.path.join(ROOT, 'data/i18n', f'{code}.json')):
+            print(f'build: note: no data/i18n/{code}.json yet; {meta["name"]} is left out', file=sys.stderr)
+            continue
+        errors, _ = check(code)
+        if errors:
+            fail(f'{code} has {len(errors)} translation problems, first: {errors[0]}. Run: python3 tools/check_lang.py {code}')
+        langs.append(meta)
+        i18n[code] = load_json(os.path.join(ROOT, 'data/i18n', f'{code}.json'))
+        if code != 'en':
+            text[code] = {}
+            for f in sorted(glob.glob(os.path.join(ROOT, 'data/countries', code, '*.json'))):
+                text[code].update(load_json(f))
+    if not langs or langs[0]['code'] != 'en':
+        fail('English must be first in data/i18n/languages.json')
+    return langs, i18n, text
 
 
 def load_flags(rows):
@@ -80,9 +90,14 @@ def load_flags(rows):
     return flags
 
 
+def as_js(value):
+    # JSON is valid JavaScript; escaping '</' keeps text like '</kbd>' from ever closing the <script>.
+    return json.dumps(value, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+
+
 def build():
     rows = load_countries()
-    th = load_thai(rows)
+    langs, i18n, text = load_languages()
     flags = load_flags(rows)
     world = read('data/map.json')
     shapes = json.loads(world)['paths']
@@ -101,8 +116,10 @@ def build():
 
     data = {
         '/*FLAGS*/': json.dumps(flags, separators=(',', ':')).replace('</', '<\\/'),
-        '/*COUNTRIES*/': json.dumps(rows, ensure_ascii=False, separators=(',', ':')),
-        '/*TH*/': json.dumps(th, ensure_ascii=False, separators=(',', ':')),
+        '/*COUNTRIES*/': as_js(rows),
+        '/*COUNTRY_TEXT*/': as_js(text),
+        '/*I18N*/': as_js(i18n),
+        '/*LANGS*/': as_js(langs),
         '/*MAP*/': world,
     }
     for k, v in data.items():
@@ -114,7 +131,7 @@ def build():
     # Full document: <title>, fonts and <style> go in <head>, everything after in <body>.
     i = page.index('</style>') + len('</style>')
     document = DOC_HEAD + page[:i] + '\n</head>\n<body>\n' + page[i:] + '\n</body>\n</html>\n'
-    return document, fragment, len(rows)
+    return document, fragment, len(rows), [l['code'] for l in langs]
 
 
 def main():
@@ -122,17 +139,17 @@ def main():
     ap.add_argument('--check', action='store_true', help='fail if index.html is not up to date')
     ap.add_argument('--fragment', metavar='PATH', help='also write the Artifact form of the page here')
     args = ap.parse_args()
-    document, fragment, n = build()
+    document, fragment, n, codes = build()
     out = os.path.join(ROOT, 'index.html')
     if args.check:
         current = open(out, encoding='utf-8').read() if os.path.exists(out) else ''
         if current != document:
             fail('index.html is out of date. Run: python3 tools/build.py')
-        print(f'index.html is up to date ({n} countries)')
+        print(f'index.html is up to date ({n} countries, languages: {" ".join(codes)})')
         return
     with open(out, 'w', encoding='utf-8') as f:
         f.write(document)
-    print(f'wrote index.html ({n} countries, {len(document.encode()) / 1e6:.2f} MB)')
+    print(f'wrote index.html ({n} countries, languages: {" ".join(codes)}, {len(document.encode()) / 1e6:.2f} MB)')
     if args.fragment:
         with open(args.fragment, 'w', encoding='utf-8') as f:
             f.write(fragment)

@@ -57,8 +57,8 @@
 @media (max-width: 480px) { .landmarks { gap: 8px; } .landmarks .cap { padding: 6px 7px; font-size: 12px; } }
 @media (prefers-reduced-motion: reduce) { .landmarks li.loading .ph { animation: none; } .landmarks .ph img { transition: none; } }
 .facts { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.facts li { padding-left: 22px; position: relative; max-width: 62ch; }
-.facts li::before { content: ""; position: absolute; left: 2px; top: .55em; width: 10px; height: 10px; border-radius: 50%; background: var(--signal); }
+.facts li { padding-inline-start: 22px; position: relative; max-width: 62ch; }
+.facts li::before { content: ""; position: absolute; inset-inline-start: 2px; top: .55em; width: 10px; height: 10px; border-radius: 50%; background: var(--signal); }
 .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .btn { border: 1px solid var(--line); background: var(--surface); padding: 10px 16px; border-radius: 6px; font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 10px; }
 .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }

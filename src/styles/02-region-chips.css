@@ -1,7 +1,7 @@
 /* Region chips */
 .regions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.regions .label { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
+.regions .label { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-inline-end: 4px; }
 .chip { border: 1px solid var(--line); background: transparent; padding: 5px 12px; border-radius: 999px; font-size: 13px; font-weight: 500; }
 .chip[aria-pressed="true"] { border-color: var(--ink); background: var(--ink); color: var(--bg); }
-.chip .n { font-family: var(--f-mono); font-size: 11px; opacity: .65; margin-left: 4px; }
+.chip .n { font-family: var(--f-mono); font-size: 11px; opacity: .65; margin-inline-start: 4px; }
 

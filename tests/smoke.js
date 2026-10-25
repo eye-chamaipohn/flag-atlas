@@ -9,7 +9,7 @@ const page_url = "file://" + path.join(__dirname, "..", "index.html");
 
 (async () => {
   const browser = await chromium.launch();
-  const page = await browser.newPage({ viewport: { width: 1200, height: 900 }, reducedMotion: "reduce" });
+  const page = await browser.newPage({ viewport: { width: 1200, height: 900 }, reducedMotion: "reduce", locale: "en-US" });
   const errors = [];
   page.on("pageerror", e => errors.push(e.message));
   await page.route(/^https?:\/\//, route => route.abort());
@@ -26,10 +26,20 @@ const page_url = "file://" + path.join(__dirname, "..", "index.html");
     assert.strictEqual(await page.textContent("#lCount"), "2 of 197");
   });
 
-  await step("Thai switch translates the page", async () => {
-    await page.click("#langTh");
-    assert.strictEqual(await page.textContent("#tabLearn"), "สำรวจ");
-    await page.click("#langEn");
+  await step("Every language in the menu renders without errors", async () => {
+    const langs = await ev(() => LANGS.map(l => [l.code, l.dir]));
+    assert.ok(langs.length >= 2);
+    const english = await page.textContent("#tabLearn");
+    for (const [code, dir] of langs) {
+      await page.selectOption("#langSel", code);
+      assert.strictEqual(await ev(() => document.documentElement.lang), code);
+      assert.strictEqual(await ev(() => document.documentElement.dir), dir);
+      const tab = await page.textContent("#tabLearn");
+      assert.ok(tab && (code === "en" || tab !== english), `${code}: Discover tab not translated`);
+      const name = await page.textContent("#lName");
+      assert.ok(name && name.trim(), `${code}: no country name`);
+    }
+    await page.selectOption("#langSel", "en");
     assert.strictEqual(await page.textContent("#tabLearn"), "Discover");
   });
 

@@ -12,10 +12,10 @@
 .times { display: inline-flex; flex-wrap: wrap; gap: 6px; }
 .times button { border: 1px solid var(--line); background: transparent; padding: 7px 14px; border-radius: 999px; font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
 .times button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-.rules { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+.rules { margin: 0; padding-inline-start: 20px; display: flex; flex-direction: column; gap: 8px; }
 .rules li { max-width: 60ch; }
 .clocks { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.clock { border: 2px solid var(--line); background: var(--surface); color: var(--muted); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; text-align: left; min-width: 0; transition: background .15s, border-color .15s, color .15s; }
+.clock { border: 2px solid var(--line); background: var(--surface); color: var(--muted); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; text-align: start; min-width: 0; transition: background .15s, border-color .15s, color .15s; }
 .clock .pname { font-weight: 700; font-size: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
 .clock .time { font-family: var(--f-mono); font-weight: 500; font-size: clamp(38px, 8vw, 72px); line-height: 1; font-variant-numeric: tabular-nums; letter-spacing: -.02em; color: var(--ink); }
 .clock .pfoot { display: flex; justify-content: space-between; align-items: center; gap: 8px; width: 100%; font-size: 13px; flex-wrap: wrap; }

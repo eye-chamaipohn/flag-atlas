@@ -51,10 +51,10 @@ function paintMq() {
   if (!mq.done) { fb.className = "feedback"; fb.innerHTML = mq.miss ? esc(t("mqMiss")) : t("mqHint"); return; }
   const ok = mq.pick === c.code, picked = mq.pick && COUNTRIES.find(x => x.code === mq.pick);
   const tag = ok ? t("correct") : mq.pick ? t("wrong") : t("answer");
-  const km = picked && !ok ? (Math.round(haversineKm(mq.pick, c.code) / 10) * 10).toLocaleString(lang === "th" ? "th-TH" : "en-US") : "";
+  const km = picked && !ok ? (Math.round(haversineKm(mq.pick, c.code) / 10) * 10).toLocaleString(langMeta().locale) : "";
   const msg = ok ? t("mqRight")(esc(lc.name)) : picked ? t("mqWrong")(esc(L(picked).name), esc(lc.name), km) : t("mqShown")(esc(lc.name));
   fb.className = "feedback " + (ok ? "good" : "bad");
-  fb.innerHTML = `<span class="tag">${esc(tag)}</span><span>${msg}</span> <button class="say sm" type="button" aria-label="${esc(t("say")(c.name))}" title="${esc(t("say")(c.name))}">${SPK_ICON}</button> <button class="link" type="button">${esc(t("learn"))}</button> <span style="margin-left:auto">${t("pressNextQ")}</span>`;
+  fb.innerHTML = `<span class="tag">${esc(tag)}</span><span>${msg}</span> <button class="say sm" type="button" aria-label="${esc(t("say")(c.name))}" title="${esc(t("say")(c.name))}">${SPK_ICON}</button> <button class="link" type="button">${esc(t("learn"))}</button> <span style="margin-inline-start:auto">${t("pressNextQ")}</span>`;
   const sayBtn = fb.querySelector(".say");
   if (!canSpeak) sayBtn.hidden = true;
   sayBtn.addEventListener("click", () => speak(c.name, sayBtn));

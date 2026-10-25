@@ -34,7 +34,7 @@ function paintQuiz() {
   const a = L(q.answer);
   fb.className = "feedback " + (q.ok ? "good" : "bad");
   const tag = q.ok ? t("correct") : q.revealed ? t("answer") : t("wrong");
-  fb.innerHTML = `<span class="tag">${esc(tag)}</span><span>${t("thisIs")(esc(a.name), esc(a.capital))}</span> <button class="say sm" type="button" title="${esc(t("say")(q.answer.name))}" aria-label="${esc(t("say")(q.answer.name))}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></button> <button class="link" type="button">${esc(t("learn"))}</button> <span style="margin-left:auto">${t("pressNext")}</span>`;
+  fb.innerHTML = `<span class="tag">${esc(tag)}</span><span>${t("thisIs")(esc(a.name), esc(a.capital))}</span> <button class="say sm" type="button" title="${esc(t("say")(q.answer.name))}" aria-label="${esc(t("say")(q.answer.name))}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg></button> <button class="link" type="button">${esc(t("learn"))}</button> <span style="margin-inline-start:auto">${t("pressNext")}</span>`;
   const answer = q.answer;
   if (!canSpeak) fb.querySelector(".say").hidden = true;
   fb.querySelector(".say").addEventListener("click", e => speak(answer.name, e.currentTarget));

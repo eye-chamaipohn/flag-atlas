@@ -1,106 +1,27 @@
-const I18N = {
-  en: {
-    bestScore: "Best score", gSurv: "Survival", gSurvDesc: "Flags keep coming with four choices and a shrinking timer. Three mistakes and you're out.",
-    gCap: "Capital Quiz", gCapDesc: "See a flag and a country, then pick its capital from four choices.",
-    gLm: "Landmark Quiz", gLmDesc: "Famous places from around the world. Which country is each one in?",
-    gMap: "Map Quiz", gMapDesc: "We name a country and you find it on the map. For tiny islands, a click close by counts.",
-    m4: "pick", mClick: "click the map", lives3: "3 lives", bestScoreIs: n => `Best score: ${n}`,
-    capQ: n => `What is the capital of ${n}?`, capA: (cap, n) => `<strong>${cap}</strong> is the capital of ${n}.`,
-    lmQ: n => `Which country is ${n} in?`, lmA: (lm, n) => `${lm} is in <strong>${n}</strong>.`,
-    survA: n => `This is the flag of <strong>${n}</strong>.`, photoCredit: "Photo source",
-    hint4: 'Pick an answer with <kbd>1</kbd>–<kbd>4</kbd>, or press <kbd>A</kbd> to see the answer.',
-    hint4s: 'Pick an answer with <kbd>1</kbd>–<kbd>4</kbd> before the timer runs out.',
-    timeUp: "Time's up!", lives: "Lives", gameOver: "Game over", newBest: "New best score!", playAgain: "Play again",
-    survScore: n => n === 1 ? "You named 1 flag." : `You named ${n} flags.`,
-    kPick4: "Pick an answer", kHearAns: "Hear the answer", kClick: "Choose a country", clickKey: "Click",
-    mqQ: n => `Find ${n} on the map`, mqHint: "Click or tap the country. Press <kbd>A</kbd> to see the answer.",
-    mqRight: n => `That's <strong>${n}</strong>.`, mqWrong: (p, n, km) => `You picked ${p}. <strong>${n}</strong> is the highlighted country, about ${km} km away.`,
-    mqShown: n => `<strong>${n}</strong> is the highlighted country.`, mqMiss: "That spot isn't one of the 197 countries in this game. Try again.",
-    nextQ: "Next question", pressNextQ: 'Press <kbd>Space</kbd> for the next question',
-    hubTitle: "Choose a game", hubSub: "Play on your own, or challenge a friend on the same keyboard.",
-    gPick: "Quick Pick", gPickDesc: "One flag, two country names. Pick the right one and build your streak.",
-    gDuel: "Flag Duel", gDuelDesc: "Two players, two chess clocks. Name the flag, hit your key, and the clock passes to your rival. Whoever runs out of time first is out.",
-    onePlayer: "1 player", twoPlayers: "2 players", mPick: "pick", mShow: "show answer", mStop: "stop your clock", mPass: "pass",
-    play: "Play", games: "All games", bestIs: n => `Best streak: ${n}`, duelIs: (a, b) => `Last duel: ${a} beat ${b}`,
-    players: "Players", p1: "Player 1", p2: "Player 2", timeEach: "Time per player", sec: n => `${n} sec`,
-    rulesTitle: "How to play", start: "Start duel", pass: "Pass", pause: "Pause", resume: "Resume", quit: "End game",
-    rules: [
-      "Your clock runs while the flag is on screen. Say the country out loud.",
-      "Got it right? Press your key (<kbd>A</kbd> or <kbd>L</kbd>) or tap your clock. Your clock stops and your rival's starts with a new flag.",
-      "Stuck? Press <kbd>Space</kbd> to pass. The answer shows for 2 seconds while your clock keeps running.",
-      "Whoever runs out of time first loses. <kbd>Esc</kbd> pauses the game."
-    ],
-    starts: n => `${n} starts`, paused: "Paused", pressEsc: "Press Esc to continue",
-    wins: n => `${n} wins!`, outOfTime: n => `${n} ran out of time.`, rematch: "Rematch", newPlayers: "Change players",
-    flags: n => n === 1 ? "1 flag" : `${n} flags`, itWas: n => `It was ${n}`,
-    lastTaken: (c, p) => `Last flag: <strong>${c}</strong>, named by ${p}`, lastPassed: (c, p) => `Last flag: <strong>${c}</strong>, passed by ${p}`,
-    lastNone: "Each answer appears here once the flag is taken.", turnOf: n => `${n}'s turn`, keyHint: k => `<kbd>${k}</kbd> correct`,
-    soundOn: "Sound on", soundOff: "Sound off",
-    tagline: n => `${n} countries, picked at random`, discover: "Discover", challenge: "Challenge", region: "Region",
-    capital: "Capital", landmarks: "Landmarks", facts: "Fun facts", prev: "Previous", next: "Next flag",
-    prompt: "Which country flies this flag?", score: "Score", streak: "Streak", best: "Best streak", acc: "Accuracy",
-    keyboard: "Keyboard", kPick: "Pick left / right", kShow: "Show correct answer", reset: "Reset score",
-    of: (i, n) => `${i} of ${n}`, round: n => `Round ${n}`, flagOf: n => `Flag of ${n}`, mystery: "Mystery flag",
-    hint: 'Pick an answer with <kbd>1</kbd> / <kbd>2</kbd>, or press <kbd>A</kbd> to see the answer.',
-    correct: "Correct!", answer: "Answer:", wrong: "Not quite.",
-    thisIs: (n, c) => `This is <strong>${n}</strong>, capital <strong>${c}</strong>.`,
-    learn: "Learn about it", where: "Where in the world", vCountry: "Country", gmap: "Open in Google Maps", gmapOf: n => `Open ${n} in Google Maps (new tab)`, vRegion: "Region", vWorld: "World", mapOf: n => `World map with ${n} highlighted`, mapCredit: "Map: Natural Earth (public domain)", credit: 'Photos from <a href="https://www.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> and Wikimedia Commons. Tap a photo for its source and license.', photoOf: n => `Photo of ${n}`, say: n => `Hear "${n}" in English`, kSay: "Hear the name", pressNext: 'Press <kbd>Space</kbd> for the next flag',
-    cont: { "All": "All", "Africa": "Africa", "Asia": "Asia", "Europe": "Europe", "North America": "North America", "South America": "South America", "Oceania": "Oceania" },
-    sub: {}
-  },
-  th: {
-    bestScore: "คะแนนสูงสุด", gSurv: "เอาตัวรอด", gSurvDesc: "ธงจะมาเรื่อย ๆ พร้อมตัวเลือก 4 ข้อ และเวลาที่สั้นลงเรื่อย ๆ ตอบผิด 3 ครั้งเกมจบ",
-    gCap: "ทายเมืองหลวง", gCapDesc: "ดูธงและชื่อประเทศ แล้วเลือกเมืองหลวงที่ถูกต้องจาก 4 ตัวเลือก",
-    gLm: "ทายสถานที่สำคัญ", gLmDesc: "สถานที่มีชื่อเสียงทั่วโลก แต่ละแห่งอยู่ในประเทศไหน?",
-    gMap: "ทายบนแผนที่", gMapDesc: "เราบอกชื่อประเทศ คุณหาให้เจอบนแผนที่ ประเทศเกาะเล็ก ๆ คลิกใกล้ ๆ ก็นับ",
-    m4: "เลือก", mClick: "คลิกแผนที่", lives3: "3 ชีวิต", bestScoreIs: n => `คะแนนสูงสุด: ${n}`,
-    capQ: n => `เมืองหลวงของ${n}คือเมืองใด?`, capA: (cap, n) => `<strong>${cap}</strong> เป็นเมืองหลวงของ${n}`,
-    lmQ: n => `${n} อยู่ในประเทศใด?`, lmA: (lm, n) => `${lm} อยู่ใน<strong>${n}</strong>`,
-    survA: n => `นี่คือธงชาติ<strong>${n}</strong>`, photoCredit: "ที่มาของภาพ",
-    hint4: 'เลือกคำตอบด้วย <kbd>1</kbd>–<kbd>4</kbd> หรือกด <kbd>A</kbd> เพื่อดูคำตอบ',
-    hint4s: 'เลือกคำตอบด้วย <kbd>1</kbd>–<kbd>4</kbd> ก่อนหมดเวลา',
-    timeUp: "หมดเวลา!", lives: "ชีวิต", gameOver: "จบเกม", newBest: "ทำคะแนนสูงสุดใหม่!", playAgain: "เล่นอีกครั้ง",
-    survScore: n => `คุณตอบถูก ${n} ธง`,
-    kPick4: "เลือกคำตอบ", kHearAns: "ฟังคำตอบ", kClick: "เลือกประเทศ", clickKey: "คลิก",
-    mqQ: n => `หา${n}บนแผนที่`, mqHint: "คลิกหรือแตะที่ประเทศ กด <kbd>A</kbd> เพื่อดูคำตอบ",
-    mqRight: n => `นี่คือ<strong>${n}</strong>`, mqWrong: (p, n, km) => `คุณเลือก${p} ส่วน<strong>${n}</strong>คือประเทศที่ไฮไลต์ไว้ ห่างไปประมาณ ${km} กม.`,
-    mqShown: n => `<strong>${n}</strong>คือประเทศที่ไฮไลต์ไว้`, mqMiss: "ตรงนั้นไม่ใช่หนึ่งใน 197 ประเทศของเกมนี้ ลองอีกครั้ง",
-    nextQ: "ข้อถัดไป", pressNextQ: 'กด <kbd>Space</kbd> เพื่อไปข้อถัดไป',
-    hubTitle: "เลือกเกม", hubSub: "เล่นคนเดียว หรือท้าดวลกับเพื่อนบนคีย์บอร์ดเดียวกัน",
-    gPick: "เลือกด่วน", gPickDesc: "ธงหนึ่งผืน ชื่อประเทศสองชื่อ เลือกให้ถูกแล้วสะสมการตอบถูกติดกัน",
-    gDuel: "ดวลธง", gDuelDesc: "ผู้เล่นสองคน นาฬิกาสองเรือน ทายชื่อประเทศให้ถูกแล้วกดปุ่มของตัวเอง เวลาจะส่งไปเดินที่ฝั่งคู่แข่ง ใครเวลาหมดก่อนแพ้",
-    onePlayer: "ผู้เล่น 1 คน", twoPlayers: "ผู้เล่น 2 คน", mPick: "เลือก", mShow: "ดูคำตอบ", mStop: "หยุดนาฬิกา", mPass: "ข้าม",
-    play: "เล่น", games: "เกมทั้งหมด", bestIs: n => `สถิติสูงสุด: ${n}`, duelIs: (a, b) => `ดวลครั้งล่าสุด: ${a} ชนะ ${b}`,
-    players: "ผู้เล่น", p1: "ผู้เล่น 1", p2: "ผู้เล่น 2", timeEach: "เวลาของแต่ละคน", sec: n => `${n} วินาที`,
-    rulesTitle: "วิธีเล่น", start: "เริ่มดวล", pass: "ข้าม", pause: "หยุดชั่วคราว", resume: "เล่นต่อ", quit: "จบเกม",
-    rules: [
-      "นาฬิกาของคุณจะเดินขณะที่ธงอยู่บนจอ ให้พูดชื่อประเทศออกเสียงดัง ๆ",
-      "ตอบถูก? กดปุ่มของคุณ (<kbd>A</kbd> หรือ <kbd>L</kbd>) หรือแตะนาฬิกาของคุณ นาฬิกาของคุณจะหยุด และนาฬิกาของคู่แข่งจะเริ่มเดินพร้อมธงใหม่",
-      "นึกไม่ออก? กด <kbd>Space</kbd> เพื่อข้าม ระบบจะเฉลยคำตอบ 2 วินาที โดยที่นาฬิกาของคุณยังเดินอยู่",
-      "ใครเวลาหมดก่อนแพ้ กด <kbd>Esc</kbd> เพื่อหยุดเกมชั่วคราว"
-    ],
-    starts: n => `${n} เริ่มก่อน`, paused: "หยุดชั่วคราว", pressEsc: "กด Esc เพื่อเล่นต่อ",
-    wins: n => `${n} ชนะ!`, outOfTime: n => `เวลาของ ${n} หมดแล้ว`, rematch: "แข่งอีกครั้ง", newPlayers: "เปลี่ยนผู้เล่น",
-    flags: n => `${n} ธง`, itWas: n => `คำตอบคือ ${n}`,
-    lastTaken: (c, p) => `ธงที่แล้ว: <strong>${c}</strong> ${p} ตอบถูก`, lastPassed: (c, p) => `ธงที่แล้ว: <strong>${c}</strong> ${p} ข้าม`,
-    lastNone: "คำตอบของแต่ละธงจะแสดงตรงนี้หลังมีคนตอบได้", turnOf: n => `ตาของ ${n}`, keyHint: k => `<kbd>${k}</kbd> ตอบถูก`,
-    soundOn: "เปิดเสียง", soundOff: "ปิดเสียง",
-    tagline: n => `ธงจาก ${n} ประเทศ สุ่มให้ทุกครั้ง`, discover: "สำรวจ", challenge: "ท้าทาย", region: "ภูมิภาค",
-    capital: "เมืองหลวง", landmarks: "สถานที่สำคัญ", facts: "เรื่องน่ารู้", prev: "ก่อนหน้า", next: "ธงถัดไป",
-    prompt: "ธงนี้เป็นของประเทศใด?", score: "คะแนน", streak: "ตอบถูกติดกัน", best: "สถิติสูงสุด", acc: "ความแม่นยำ",
-    keyboard: "แป้นพิมพ์", kPick: "เลือกซ้าย / ขวา", kShow: "ดูคำตอบที่ถูก", reset: "รีเซ็ตคะแนน",
-    of: (i, n) => `${i} จาก ${n}`, round: n => `รอบที่ ${n}`, flagOf: n => `ธงชาติ${n}`, mystery: "ธงปริศนา",
-    hint: 'เลือกคำตอบด้วย <kbd>1</kbd> / <kbd>2</kbd> หรือกด <kbd>A</kbd> เพื่อดูคำตอบ',
-    correct: "ถูกต้อง!", answer: "คำตอบ:", wrong: "ยังไม่ถูก",
-    thisIs: (n, c) => `นี่คือธงชาติ<strong>${n}</strong> เมืองหลวงคือ<strong>${c}</strong>`,
-    learn: "ดูข้อมูลประเทศนี้", where: "ตำแหน่งบนแผนที่โลก", vCountry: "ประเทศ", gmap: "เปิดใน Google Maps", gmapOf: n => `เปิด${n}ใน Google Maps (แท็บใหม่)`, vRegion: "ภูมิภาค", vWorld: "ทั้งโลก", mapOf: n => `แผนที่โลกแสดงตำแหน่งของ${n}`, mapCredit: "แผนที่: Natural Earth (สาธารณสมบัติ)", credit: 'ภาพจาก <a href="https://www.wikipedia.org/" target="_blank" rel="noopener">Wikipedia</a> และ Wikimedia Commons แตะที่ภาพเพื่อดูแหล่งที่มาและสัญญาอนุญาต', photoOf: n => `ภาพ${n}`, say: n => `ฟังการออกเสียง "${n}" ภาษาอังกฤษ`, kSay: "ฟังการออกเสียงชื่อ", pressNext: 'กด <kbd>Space</kbd> เพื่อไปธงถัดไป',
-    cont: { "All": "ทั้งหมด", "Africa": "แอฟริกา", "Asia": "เอเชีย", "Europe": "ยุโรป", "North America": "อเมริกาเหนือ", "South America": "อเมริกาใต้", "Oceania": "โอเชียเนีย" },
-    sub: {
-      "North Africa": "แอฟริกาเหนือ", "West Africa": "แอฟริกาตะวันตก", "East Africa": "แอฟริกาตะวันออก", "Central Africa": "แอฟริกากลาง", "Southern Africa": "แอฟริกาตอนใต้",
-      "East Asia": "เอเชียตะวันออก", "Southeast Asia": "เอเชียตะวันออกเฉียงใต้", "South Asia": "เอเชียใต้", "Central Asia": "เอเชียกลาง", "West Asia": "เอเชียตะวันตก", "Middle East": "ตะวันออกกลาง",
-      "Northern Europe": "ยุโรปเหนือ", "Western Europe": "ยุโรปตะวันตก", "Central Europe": "ยุโรปกลาง", "Eastern Europe": "ยุโรปตะวันออก", "Southern Europe": "ยุโรปใต้",
-      "Northern America": "อเมริกาเหนือตอนบน", "Central America": "อเมริกากลาง", "Caribbean": "แคริบเบียน", "South America": "อเมริกาใต้",
-      "Australia & New Zealand": "ออสเตรเลียและนิวซีแลนด์", "Melanesia": "เมลานีเซีย", "Micronesia": "ไมโครนีเซีย", "Polynesia": "พอลินีเซีย"
-    }
+// Interface text comes from data/i18n/<lang>.json. "{0}", "{1}" mark where values go; such a
+// text comes back from t() as a function. An object of CLDR plural forms ("one", "few", "other"…)
+// picks its wording by the first value. Anything missing falls back to English.
+const LANG_CODES = LANGS.map(l => l.code);
+let lang = (() => {
+  try { const saved = JSON.parse(localStorage.getItem("flagatlas:lang")); if (LANG_CODES.includes(saved)) return saved; } catch (e) {}
+  for (const l of navigator.languages || [navigator.language || "en"]) {
+    const code = String(l).toLowerCase().split("-")[0];
+    if (LANG_CODES.includes(code)) return code;
   }
-};
+  return "en";
+})();
+const langMeta = () => LANGS.find(l => l.code === lang) || LANGS[0];
+const pluralRules = {};
+const fmt = (s, a) => s.replace(/\{(\d)\}/g, (m, i) => a[i] !== undefined ? a[i] : m);
+function t(k) {
+  const own = I18N[lang] && I18N[lang][k];
+  const v = own !== undefined ? own : I18N.en[k];
+  if (typeof v === "string") return /\{\d\}/.test(v) ? (...a) => fmt(v, a) : v;
+  if (v && typeof v === "object" && !Array.isArray(v) && "other" in v) {
+    return (...a) => {
+      const pr = pluralRules[lang] || (pluralRules[lang] = new Intl.PluralRules(langMeta().locale));
+      return fmt(v[pr.select(Number(a[0]))] || v.other, a);
+    };
+  }
+  return v;
+}
